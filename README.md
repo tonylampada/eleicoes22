@@ -21,7 +21,8 @@ O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite rela
 
 Exemplos de queries:
 
-Essa query mostra os votos de uma secao. 
+#### Exemplo: Votos de uma secao. 
+
 A mesma informação que tem aqui: https://resultados.tse.jus.br/oficial/app/index.html#/eleicao;e=e544;uf=al;ufbu=al;mubu=27049;zn=0046;se=0108/dados-de-urna/boletim-de-urna
 ```sql
 select 
@@ -44,8 +45,13 @@ where SG_UF = 'AL'
   and NR_SECAO = 108
 order by cargo, QT_VOTOS desc
 ```
+![image](https://user-images.githubusercontent.com/218821/194704061-464b7489-f115-4d90-aa3c-7821842f7ad8.png)
 
-Total geral de Presidente na Bahia
+
+#### Exemplo: Total geral de Presidente na Bahia
+
+A mesma informação que tem aqui https://resultados.tse.jus.br/oficial/app/index.html#/eleicao;e=e544;uf=ba;ufbu=ba/resultados
+
 ```sql
 select 
 	NR_VOTAVEL NR_VOTO,
@@ -56,3 +62,4 @@ where DS_CARGO_PERGUNTA = 'Presidente' and SG_UF = 'BA'
 group by 1, 2
 order by 3 desc
 ```
+![image](https://user-images.githubusercontent.com/218821/194703966-efd06091-2648-4631-8e94-637c2bac536e.png)
