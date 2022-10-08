@@ -15,7 +15,7 @@ A pasta `tse/` tem uns scripts python criados pelo TSE ([disponibilizados aqui](
 
 Mas, enquanto eu tava fazendo isso, o TSE disponibilizou os dados consolidados no portal da transparencia, que simplifica demais a vida.
 
-O script `baixa_transparencia.sh` faz esse download consolidado na pasta `buzips`
+O script `baixa_transparencia.sh` faz esse download consolidado na pasta `buzips` (pra construir o banco só precisa desse)
 
 O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite relacional que eu queria
 
