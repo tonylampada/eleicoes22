@@ -2,7 +2,7 @@
 
 ### constrindo um banco pra fazer analise com SQL nos dados do TSE
 
-TL;DR - se vc quiser baixar só o banco que eu construí, [toma aí (são quase 10Gb :P - link pendente)](). Se quiser reproduzir os passos pra construir o banco a partir dos ddos do TSE, continua lendo :-)
+TL;DR - se vc quiser baixar só o banco que eu construí, [toma aí (1.4Gb zipado)](https://1drv.ms/u/s!Anp5dQ7ntRq8hAg9hz4Or_xfzyRh?e=JYk8QW). Se quiser reproduzir os passos pra construir o banco a partir dos ddos do TSE, continua lendo :-)
 
 Normalmente eu gosto de brincar com os dados abertos disponibilizados pelo TSE sobre as eleicoes.
 Esse ano eu decidi que iria tentar construir um banquinho relacional em sqlite com os dados da eleicao.
