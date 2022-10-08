@@ -1,6 +1,6 @@
 # eleicoes 2022
 
-### brincadeirinhas com os dados disponibilizados pelo TSE
+### constrindo um banco pra fazer analise com SQL nos dados do TSE
 
 Normalmente eu gosto de brincar com os dados abertos disponibilizados pelo TSE sobre as eleicoes.
 Esse ano eu decidi que iria tentar construir um banquinho relacional em sqlite com os dados da eleicao.
@@ -9,7 +9,7 @@ O primeiro passo é conseguir baixar tudo.
 Num primeiro momento, o [portal da transparencia](https://dadosabertos.tse.jus.br/organization/tse-agel) nao tinha os arquivos consolidados pra baixar.
 Por outro lado, este ano, o TSE fez um app bem bacana (https://resultados.tse.jus.br), que dá pra baixar até os arquivos "crus" da urna (.bu e .rdv)
 
-Futucando na api, eu descobri como automatizar o download desses arquivos. O script `baixa_appresultados.sh` baixa isso nas pastas `municipios`, `secoes`, `hashes` e `result`
+Futucando na api do app, eu descobri como automatizar o download desses arquivos. O script `baixa_appresultados.sh` baixa isso nas pastas `municipios`, `secoes`, `hashes` e `result`
 
 A pasta `tse/` tem uns scripts python criados pelo TSE ([disponibilizados aqui](https://www.tse.jus.br/eleicoes/eleicoes-2022/documentacao-tecnica-do-software-da-urna-eletronica)) pra poder lidar com os arquivos binários `.bu` e `.rdv`
 
@@ -19,7 +19,7 @@ O script `baixa_transparencia.sh` faz esse download consolidado na pasta `buzips
 
 O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite relacional que eu queria
 
-Exemplos de queries:
+Exemplos de queries: (tem mais exemplos no aruivo `consultas.sql`)
 
 #### Exemplo: Votos de uma secao. 
 
@@ -63,3 +63,21 @@ group by 1, 2
 order by 3 desc
 ```
 ![image](https://user-images.githubusercontent.com/218821/194703966-efd06091-2648-4631-8e94-637c2bac536e.png)
+
+
+#### Exemplo: municipios de sp em ordem de "bolsonarismo"
+
+```sql
+select 
+	CD_MUNICIPIO,
+	NM_MUNICIPIO,
+	sum(QT_VOTOS),
+	round(100.0 * sum(QT_VOTOS) filter (where NM_VOTAVEL = 'LULA') / sum(QT_VOTOS), 2) as porcento_lula,
+	round(100.0 * sum(QT_VOTOS) filter (where NM_VOTAVEL = 'JAIR BOLSONARO') / sum(QT_VOTOS), 2) as porcento_bolsonaro
+from bu 
+where DS_CARGO_PERGUNTA = 'Presidente' 
+  and SG_UF = 'SP'
+group by 1, 2
+order by porcento_bolsonaro desc
+```
+![image](https://user-images.githubusercontent.com/218821/194705549-febdf1a7-83bc-453e-844f-16200dcecb39.png)
