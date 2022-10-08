@@ -1,0 +1,1097 @@
+EntidadeEnvelopeGenerico:
+.   cabecalho:
+.   .   dataGeracao = 20221002T150735
+.   .   idEleitoral = ('idPleito', 406)
+.   fase = oficial
+.   identificacao = ('identificacaoSecaoEleitoral', {'municipioZona': {'municipio': 1007, 'zona': 9}, 'local': 1112, 'secao': 120})
+.   tipoEnvelope = envelopeBoletimUrna
+EntidadeBoletimUrna:
+.   cabecalho:
+.   .   dataGeracao = 20221002T150735
+.   .   idEleitoral = ('idPleito', 406)
+.   chaveAssinaturaVotosVotavel = f3ca898726a8b555b453fa95edc40a3a740cf1eed99fc4727cabf9f70362ced6
+.   dadosSecaoSA = ('dadosSecao', {'dataHoraAbertura': '20221002T060001', 'dataHoraEncerramento': '20221002T150204'})
+.   dataHoraEmissao = 20221002T150558
+.   fase = oficial
+.   identificacaoSecao:
+.   .   local = 1112
+.   .   municipioZona:
+.   .   .   municipio = 1007
+.   .   .   zona = 9
+.   .   secao = 120
+.   qtdEleitoresCompBiometrico = 256
+.   qtdEleitoresLibCodigo = 12
+.   resultadosVotacaoPorEleicao: [
+.   .   .   idEleicao = 546
+.   .   .   qtdEleitoresAptos = 316
+.   .   .   resultadosVotacao: [
+.   .   .   .   .   qtdComparecimento = 257
+.   .   .   .   .   tipoCargo = proporcional
+.   .   .   .   .   totaisVotosCargo: [
+.   .   .   .   .   .   .   codigoCargo = ('cargoConstitucional', 'deputadoFederal')
+.   .   .   .   .   .   .   ordemImpressao = 1
+.   .   .   .   .   .   .   votosVotaveis: [
+.   .   .   .   .   .   .   .   .   assinatura = 6f0632e473ac736361a928951ef9de5ed9464389947d315a9b343f6f65b1580a320d2c829022992c72ae855675d7d68bbfe4ae7a5707060d604936d2b20f2b01
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1000
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 11
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = d95cfab9b19a095ca1c30c68c8c74e48f58172c1b2918891ebd42937dcffc9794146c8f49d07adf898a366921a33ac883d357477a6469978433162405f0eda00
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1010
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 6
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c12d43f8f995157fa7a502e6c23f5fb30439fc2200b803433eb44d3b2b82a0fb25b772528cbfbe561ad2c696fcacde37df22f50250ae9f484eae338ade085d04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1022
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 55fb6f878330e7b03f1d9db6abde6ee193b490bf181c55927c14bcd5bc077a5a3cde2ac51bb3975bcf7c972e7b34faaaf58858533c7ce6bb94c06111f9449606
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1080
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f7821f427ac52a61745149fcebef7e336c9d0d316f44adecaf75ee939226aeb969b6006cd8e188ffc540bc9a158f8d35e464137abddd55de8e8d1858ba786103
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1100
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 15
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 082d9d650cf50680543eb693589be10664d856d1e33a2b4d85ed6d748b994ca110de322f3b48322f4fbbdb157a53ec26a5449ac080eadf808a44859fd00e3801
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1101
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 17
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ab5ee0547811295fd308cb1fdbbb8c6a6fb7ffc07f895a5a8b5f2140b5c1efe764cc9f34ee4fdacfb2199dbad358f75f83f5259ffde070f8a482673cb16d630a
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1106
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2b4d5aea9a8d1f3cd5c08c9a8b81dc9476bc6039e007708ffc6516a18bb9114b79ddbd85b215805d045ebaacfbb9e0f52b6314e89424a86b758c630c45d0f405
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1111
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = fe706f25b62a3ec4d2f6e8bb0fbcefc608cb78aafa1ed58f116f10c399378053b083a1b5627f37d9a4fa24f01d8308229077dbd274ce87380872d1e42e932004
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1122
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = dc092313d1e5a949d1222325a8e61c61d605d6a84a5d9c2750c05c8a947fb58967b53e44d99de1a08d11c6b8baedba118f100011f2ba8b56026264729530070a
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1123
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 76ffe3a2184e6149a965c3dfa4a93f93b8c811588305dfd11740cb8de463cad085b9ceac8351ce09b09ef075d7ba1d2711946977403c0c2355157e4b76f6df0d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1144
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c972060787103200719c9a597a00758c9968ca4f28846019f5c81c7d9b2e0b9f286528810c49dd69a686f1477778372a068849401488be2cba5a6fb0c8466f06
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1200
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = db2e8868961813b72fdc5d24c4a6e74b435908a39a4961d5e949e5089d372716e381c9ddf689d7d5e166ea95b6774dcab4bdee7d772dd4b023e48137bfe1eb06
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1212
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 3a868d34279a2ce6061e0ff37eac1943a98c7cf5014fb6d4ed8a77df06a5d31c3cd3d9b15dffe9e4291d7d719b55952883a0a278ec171356928c4a482fd58d0c
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1221
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 9a4090e0b45d7432a2cf5bdb15da820e2fd4b6c1435e7644353dcf9d4d2884f5d00aa61ea5a0ed9885f62d1434ad7396ab11bc10d90243fd817b2079d039340e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1223
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = cc2375e55e5bd7d752adcc485a75ff680f41c6d5fc67e9702a04d2329f234ce3ee85f293a934d12d70c8f2d3f4d3832a77e5a719a3a6cb9125621bf74aa07205
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1227
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 6e6c95927cc7721dab6fea5f12105b338788edc4e3b980ad45eab42f5f0b9ad9f2e5c3125d48497f091a2fc8dcfb730676e4d163205db7482482fbf7f25ceb08
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1234
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0b3a0a9a9c27edac958ab1b485811cf5611e9f28b1b7543414e17bdd8e323832e4ca45de681cb02950e9fe0ae217097d7186a690592557509733be6e39d08708
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1277
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = d3af7517b82528a281a5abd92d4a1c7aed768597c8e68206b237820a1e5828ae567ef84fb99c986c8c2a0015bc45ebc6605199079858f799d1320cc70ef74b06
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1312
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 6c365efdfe1bba57eba7efe642073b34054b54228a0e0e684baf1630ecd269c6f98efbf576a3de78d3c4167ae87b94d9ca535df97504abd02fe830a973fc260e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1331
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 9
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 9f4da70ee87af090ce77820bdedcddd5104833074819fc65a1486a7b787326c20f122119324a2d1627c16e6063b929d14d7862b0f10b07c1a5677568ea910c04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1500
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c6b37648673f92289c65145a3a556384c88549b3535f1d8ad65871357cfb087bccbe76cbb92f31523d61cd605e032f05c4df435eefbc61fbf3bbe008320f590e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1512
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = bb7cff96ce4556652182261b415f3cb6578d827fdf9fe9e2ba0f9e6978441e5aaeeb6f3832b9a7ea866d0c9cbaf39b4baadc37f6a683afcf01ab72dd49aa3e02
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1555
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 29
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ccdfcdc973a7a8c923f1dd85e900f26f513e36a58bbce7106a24d863e20d7488efad2dd59a8f4e9863b01ca54a1a0e3907388a43a4eeb8391c7dc04f1a409a04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1567
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b2f7dd7ed66564f4015513ec2e976bfe8141a76a0b685aea6192fc0067bd26319feb119ada5f3673a6f77e3b9aa6b7393dadcbe5ed10a65365d26688a8191708
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1900
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 187931320e0a45f260b99187c68c3dcf4dc44b4517798ca9af1e8bf7d21f46edf1a509ea1a31c7808387f416a725e80faa88b3aa88ac1a1956a03fb8bc6ab300
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1910
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 3d0e7fd0aabe02f7adf5160eb24d0c6bf36f1da74812e56bb5e4b0378d8950246f89b78d064da3490853ef30d0c84a81cbe399e75a9a16d65786740622096f0d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 1911
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 56ce50d220ac07db370f8fe909c117e8b3205491f84b8cbb5dce09e2e4f9ee2891fbbcbda0f6a777f0e1b8a3f1a2e0b6f828da0b5e07c763e6e19330cfe21302
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 2022
+.   .   .   .   .   .   .   .   .   .   partido = 20
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 26b903a197498a19ff20788c08d52ebae766ec1ca9c9156f62926fdb6304e90c7fa9dd3233a4162a575e5631d4448f2dadf623b4db6ad4e7133be8e69eddbe02
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 2345
+.   .   .   .   .   .   .   .   .   .   partido = 23
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b20da18a161ea92e7077ffcd0c1ebca37cdd5829277216c9a6b56d81290b16b2f61f5e0e666f0f7e63b7a10b4fbaf1e775071f2bd8e6ba8cfd25b88ca5472f09
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 3663
+.   .   .   .   .   .   .   .   .   .   partido = 36
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c223ca9e997e21bcf97ee4882e39ec39203e75a7fe59b65bfcf225d43d91a9e5ceaf8ecd393ef9d5b0ac410ffe036c3e018ecc607c951cc8bd6f4f92be4ce605
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4040
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b3657c1296d28a282e0ef0a6981359e2c423382f55476c992783095b31a08d45ad8deeadda9684f3021bc38e21507bacc7dc286a207cbad067a5840ba9ad4a0e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4422
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8a20c37cc9960ac07cdc48fb8d389b7915bd7ca51309714bb57ecfec1b047aad7eac15223c0a36fc9ebf04db61bb328607383ca2794b27cf12a2964e103c7900
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4444
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 21
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b0b80f0cb318da331cdaa0656ca0195ed4230d5fa8d907fca97620f328a810a97d24003a504cedb1d23059220c3877bfcd3ec25f8b77e240884af20b5feacd0e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4455
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 11
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0decd11fef1954eb55d8daf2fbf500ccd53368b676441dfa8b9c40d45834151cbe4ab1c02686a6db28dd3341b1064e567ac81256937de3f5f6ee7fa761f8dd06
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4477
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 66c403bdfd0ece5e158cef2b847c255381f2ceeeb34d3210518010cce84f740b6d8e7fdbe8fa21d59585168c61dbac44acc6ed4de029ef0ee98bbbba6107b404
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4488
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 9
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 35db7db16ddf07d681844d7ca1fc1166db9164dae8c15b45214b90178d63599f80137725092ddb2c08f73582e1922de150b78e8e0367700788ab326e7b19e604
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4500
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f6d11ec3c3943ab3260aff95f8e5da428f9e9aef96a2a9f1ab6aba07515635dd8632f6d79d660c0f78138861d9d7e48c3f087bf75d79db08dff278d8a305170b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4511
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 1b5614bd9a295f8a0d61782c686052ae2384a6c99863d177b7c28ab667cfbfe5c6fc641bbdbbdafb521e02c4fb8859fd644b26dacae2c4ac75d1fb664b99620f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4515
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 70ae029dcc0bd48c3577938f5fcfd4e31356fbf6c934381747b3f386c5733d0755c9d0a2003744794b2a5b50ff541a2be5ca4341fd278c4be562a61a0d611106
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4522
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 4fb8da0ea69139c448f59addd301c222a7547904aae6bbedc8e0f9900a336d3452eca962e8941eaa780a3dc7dd0bea8118102c9b026c8fd64827aefecca0e406
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4545
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = defb60d36f3b1b945eb2cb4ac497d9a9ab835023b7bbb1e7debb370db09d75e23ab0adff2031fb0ac55cc927e095ee976c02b5473b4aebb4be2a097f3fdc3407
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 4555
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ee3acb4e0601dcb72292173e607f354e0d2d2f0ef7c2057418ed45256d08c72de2ea8a1b6ada4cc29a3db7ce3c1acdd6934ec805520e51d747ced976c04f9c0d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5022
+.   .   .   .   .   .   .   .   .   .   partido = 50
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 46c660785d6f010484485240a4dcc9bc8d02a4fccd7e769f97fad37ddc8f3327e56fab58c7bc382900382aeaa6be148c620df35cee897a427495a611d8fc1504
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5188
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 00dde3795f46b5546682c3cce4a9eed3769f3baf1a0c458013c2fa97b2a5897424d9775f970ca7da28dce2603cfe1cf36e7f90f1403b9ddb72d7036b1476cf0b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5500
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 88e16ac85b2b957cdd6ebb475a867fd9abb9154b4ab08fc368334bb85855be1e5ac668fe4cabbd8a6dd7d1413f99cc462358f99bb3a870f93697f418e982f408
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5522
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 1602ac628138c482a6201d700c154a08df1f97f77b9b9c5a2957aa9e60b8435ee118139fa6123a889ebfae77b2546a335fd2dde8c1bae2afd9fe723a92fb0203
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5523
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 6eafbd4497b7738b978391319c4ec0769ce11493442c2eeef342afad8ee68fa56dfda63604f3ccfe3197ef3a3ffecc1ae4c9124d64d55e684b3ca89a52e9bf07
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5533
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 6d617e981d35b6fae20c13f5e7939fb34ffbc5c078ea33d0c55df101505516794af4e30d2766c23f038d6c52cd60beb5bf46ebfb49ee3322a846d8c2a9732405
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5555
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 010eab2d6f273095e9248a00e04f06c5b3821d190d26127062456fcde9219958c6dee484433207d06adc88911ccc202c8acc80fab58f38f997fe1258ade39604
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 5577
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = bd020d866ff28366fd81a4632b0c59ec192ab9a46b1a713395e3a3f55b24c66b4b7b3581e189b71fd71534d8ded90860eacc121026275f8eb2d1e3b8c9b4680f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 6513
+.   .   .   .   .   .   .   .   .   .   partido = 65
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 11
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ef1a9a01b1b3fd9c9b61df3dbc292f1e32591d77141017f6abc5b7caf51c40e1f50054297e46664aaaeafd49124820559196689901e5f971043cc35b9525d103
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 7777
+.   .   .   .   .   .   .   .   .   .   partido = 77
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 34096793ed637fa1adb541d2d4e802d97bf20ee8a33137313362f2159923d6aa6151f143dd6f39d7ca34b90057353d2514e5dcb4052cf8ba7e9b63a17a45ce0a
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 7789
+.   .   .   .   .   .   .   .   .   .   partido = 77
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 7338d0523306f128a9da8a03bc51609801cbc25d96935e509ca503cc17b2374f0d2849a225e028651a2d316b2de1f5604ba9be4fa33f848f663d36283480c907
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = branco
+.   .   .   .   .   .   .   .   .   assinatura = 16faa239bb916c11cd6ffc373e9212abfa0f97ac4bb3850cc17f7403ee0bc90d7970ae63b0056003bc8b6998591fedf58a91c74f8e900385801c309f3475620f
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nulo
+.   .   .   .   .   .   .   .   .   assinatura = 4d3065bd860a1c4ac70f2680b0c7b3ae187241942176b384f7bd950062e981b4ab4af2bab422357b71cbdeaa5d803e28ecda0ab100b3ac7b95ab8ff9fbcbe607
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = efeb5eb2f7b2c0ad46b4c3ef7c7a595eb97b957018bb30e9f66505544ac63c7fa08d85a95c66611d3ce34878242c0cf38f61a2e189245ae4d14cb0352953000d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 0c119a1560550cfabb98dfa0098bab2eb7ed3a4d053a165a51ce04e308150bb7e7a3ffe1e68aa15a9b4a0f30fdd7d3b8412c34a14d72d59eef6140fee605740e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = c8c524b65b824e0d93d1df0e2465be21b991215c1c091a578a4978cb987d97870c9e97b41820ace4a378f708970610683614da0dae7d26c764a7eccfe5c9ef08
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = f69cd91d4bccf1c933565f1b097791c1cd8cd36330853b175cb1233a4ff4b021d8c3a94f5210cfafbb97044fc8094204249dd4d832f4f83103a72b7b051ce600
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = f61b9cea19654588f57c14c76ce74da88b92e398b3c4233a56e26d83003656ede4fbdc52439f04f99837fc465956eb026baab884f6f7d1f0cb0de9ff1ff67501
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 01d8fef13a7d05682df3c8e54d793e6797b53b45a23610430f351f0d4369414505e87d27f7a11c67e746b1b7c69bf6545d1c8da387cf9da0b9046d3c59a04a00
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   ] <== votosVotaveis
+.   .   .   .   .   .   .   codigoCargo = ('cargoConstitucional', 'deputadoEstadual')
+.   .   .   .   .   .   .   ordemImpressao = 2
+.   .   .   .   .   .   .   votosVotaveis: [
+.   .   .   .   .   .   .   .   .   assinatura = b1555ac9523e8e9e7275e24d0762061fd8c8b6b7ab012b412206567897163081b571e132f6bbee09994ff1114773e02cdfb7fed159135b22ea24240b5b50af04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10100
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 86331a26821bc2813ec9276be48993ac0403d3ae391020a9290862dd657d8c9c9c6abafaf9ac65dadf46c72f3868bd79eb41340bf3cc6e070d81b96297559c00
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10123
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 450482d1bc388ecaedf5ec19b4f2792f2a96b4a9ed87fa7388d5de05fb7ce39f72912aecd53dc26aa0b603821c3df9ad819e5acd46bc53c29d6809b24fb70405
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10345
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f2d302e802ef18cfc7f51f01a9f89c03f502eee1557f2582f7b4fddd62534fef7690b5fcca33bb2d44b78426ff640e4ffb01c0e7cf1143668a944f36006d5200
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10456
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ce1fccc7f6fc802237caea2c200cf505e4e22a290ad386790254cb7675d51a7777f3261fdab06514ab0adf41e0895502bebf77c353be854e08fc86eba3966409
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10567
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f065849ec29155b4bf89cd8a34c8cd905bba01a2d26fa3179946da8d24b0c146be1584083c90acec6b678c21b290f7c515d9bdf9f0bc385aebd5ba757263d60f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 10777
+.   .   .   .   .   .   .   .   .   .   partido = 10
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 6
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 4b40f5fcaab35f6d7962d019383a00512d5ad63438ca5053d9b8eff16e6775b79b550db9d4526e119ab981a531d5f7933894b4906a5055e7da8d96692cdc5604
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11106
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c3bd994ebe6172e5ee7a539afd1f5173cb48f4f5c8af7ffa785220f3927176adb3cca672d13c8e3c2997b1f7ac29e7fd9451e056bbbcb9aa9b240f6173b22b03
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11122
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 14
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2ec566e6d0fc21dbcddc9e3f70ac4d998fe0c722d4fa80f7fce8212094da0ba81f67b91a555f65e01b5689ce82371eb03801af84016622829004f70cdec43808
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11123
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ebec85e5684226283ccb58d6e2d7fbfeaeee2a51d5973349a5b74fce34fe05637d1f385567595496a6dbc5b58a2b556c473c381c47d8d1ba80ec2495e1c52c00
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11133
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 64aaae11592e382a502e460b16bf7412c8b6e569af36948ea2c74ea4d93db453beeb38aabb422245823dcf8665d95396ea9b776edd67d7b6056aeba0994fe307
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11234
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 12
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = e21a88654d9fc87d1d05665b5723e6d71080f8986cd246a033e8902ee39d145607ffd04ce3782fa72e277a79cd722f04da254f605dba3baa146e58aef0e5f304
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12012
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 36b408f9ee139e4d7dbf362b27485385f2022fcadc205f04dc4b7491f5db0cb9e9bc838e1109c3b433b3d22cc3ffd20cce9ba01898fc8738e088d08b15f8d007
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12111
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = af7ee1bb47d93ce2080a9c58f065742d47254b54c11e2459705434883ce197a6329c9024d647c7026bfd9db8ec8a543391b003896dcfa67c86b9f3092ce5a907
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12121
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = bb84a5add2a932a4c159a11651a95dd8c32a1ce10caea88f29914bd10d18ff5b1d36d8f518cfe25e96a40623b568d739bb11056f68008cdf958389936601ca07
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12123
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 16
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2992edeb0527e731bb21e61e07736712f17d6b1ffa1462416b76d7ca93453408acbbb4276656ae058ca6b29b463634ec14f6f8993ebc29e4529ae56bdf520509
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12133
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = d66da869bc4ed37b31a64f7da031f501cee902e923166a8ccccb628e3e640bd39688b3f382a5023a96c0ba89b6d96d8795feed5f0f136fcea4fd657ec2977d0d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12212
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2bb71abc1313528978556dc9df23f2fa2af24c610b79f0e65446c99b5067f18b5ae10de8f6fa17e8e1092dea9815cdcae1cca4ea1529fcb5d395d16eea51880b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12222
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 01fc1840763c9dbf0db872c57f1ce8d51ab62482672c2c4a447f8b8d2087838729bba07c85fdb54efc69693c3697b922e1a06d1fc9c12c443798f69ab692030d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12333
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8306258d95fb39559649df09de4cb52b497186177093a9e483956d59982e0fb4a9a4090c7d11b7d5fc8f1d1ccd9a0b93ea64bdd1527ff33f48aa3428b1a1e508
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12345
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = fb1133027efe0d527b7005310c5e6d3e4b715e412c02753bc5ca54478f160fabfff33e4b36f9f314e84e5575fa74f99f2f4b6d0119ef612a74baf2bc97de7205
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12444
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 5ff656bd4ff52a76cbfcf8d286499f498a69a3b5061b4c1527d04b2bbceeb8ee09631e8b6d7980baf86a3827c5100c74579176e798685cbddf135c1463191404
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12555
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0073250093730e5cdc9dbc34b454cda5df5aa8939a7148d0b60c9ea24499879c1e595b1cecf12720abfd21132d5b4a5f55e231dc34149a3c411514944e0fcb06
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12612
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = d6f0d404850631cf07f88c40f037364a5b0c7c3fa0987345b4600e8352ee453071e690adbb94e9344297b72214dd0522920dc84ff1be23e7672fa300123a8701
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13012
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = a04143509829fe8710fdfe36611b547ea9b1d0ec5c898982061afedc81bfa0d68ec69315c4b19db61c266ebb2a66b5dd51352c9df38cb0be7d49cc7eb9238504
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13013
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 8
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 9da6cf0ad5c0f49e4ca4969b5ddb3424073653f1f41356a7b40a95657a18a69911fccbaf81d415777b4fa21971db5b707cd9fb96788520d96d9bb216403e3e03
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13123
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ac37cf86bfbd6dd044d486c27abcd2e2eeb05372f5583c1ffe606b0cb9cd4bcd3593f292b497436f061e052483a63393e98896cc60ab91a5794d57ba2d31080b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15000
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 02be7b826d8d58cf05eb4ce2a4508f92064655b9b972d3bd88fc571f1adebfd3dfb5fe2f7278f12a590eda049bae15e9872628865cb700e0b4b945ea1aad6f0e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15122
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 8
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 5eb6491a7684d4e09320a343b87580efa07399377f2393055e9cbccf43c75f29e319b014ef03e6f3eb80bc6a8a9ae698e780111729b90bb2cbfaf5f530d50006
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15192
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = a7fdd99bf291624462c2b157cc37457f58ba0470b4f49b6fc5bbd3c7452f6d6b138b73aa02221dc741b1826d0757aca371473feaedaeec35f9462ae12d986a02
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15321
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8e36858142d474d3396d571b570f254e76f5d6e945e0dc9a2790cae0271cfa5819e176add5d6a2cbcd93f68d790a07045720d04690ca98325e956b3b6b0daf09
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15888
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = fa7ac382aca5a3870f7b2493481bffa7b60d385814884b2da01c231a6c9f2d6d55d3e2dec39fbc5a2dc582ad09fac1908fcefe07526655e33e3d742e6bc9ec05
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19123
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 1d59cc901e8f783e9d082612fa91dec4c33b73abe4b06170102102e8886669d612a5155d60db11ead7c0007b9e17a5697fcb3c2d57453b562f672fce4be6a20c
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19191
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = a2f379881f0d55ad02e9782c84bff0bf0aa8a993bee82b8b383409dca65b9b13d4f8ae05d1e09df14099d9f079ad2e519ea1887e4bf9fe2241285e0b514b4c09
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19444
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 10
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 90f9994eef3379ee8515c95c4b242243bebd009ccd6baef4d68b21ba07fb152c59d2422e28695bdc3a42267ae6b058df55c7b67d0f7f29008ce3c19f2600da08
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19456
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = e26fdeff115c45ebc5dcca517711e8078fe58e43d3e2009b6134ccd3b626171ac32d37139c29efed1301797982327b38b0c02895335d63d49ac0753aa0a81300
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19999
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 9c04633286b9dfba34284147e6e019b6bbd8892d9840b00681d73b209cfd02316421366f13e4d5fd81b2e30c32fa6ea7c62a2a36dce99392c3e63c7713f8d106
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22022
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 5669bce65369727065d8bbdab1e4c861e26f7b1095e08c2e27b282463bd11c114b8173d6e817938f18f26bfd342dd8af5f288f426e52b29189481d9f2cf73f04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22122
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 1865a20579d02a6dc4d1cd73babf0695fd88e37a5b23e90fb1b14c88288149eca7e39272b76eb39a61e92182a00c14bbc9e9d047b703c30773e6b5a9ee61ab0d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22123
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = e0b6a3277d01be71c5a5569e968162806c94df6e942ed3d78d3e0a7b8267cdc8cf6a9799ed0c526bbaec541434cfac1d576ecd54583bfd70937d648913e50009
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22190
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = d250817b9f7f8d03ee2b9d40c27787ebc7b514f4384722a334e721882d29b2829dc3071d6c2e89f4a06f50ebeb207eccd8b6b758f6a093b705ee5a4b27248909
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22300
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = af0bde734188d51b83c1219629192caf3a2a285c935feec999dc886b2928feefdeb6156bf791118fe4f915eb16193699b8f7b25d69bb24e3095484f07eb6f306
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22345
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 16b09f817db97c644f5b23c887d19d6adf2a9aba99d863bac50590966e15b9cb8adea2716099a79b77b75335676891adaae7fd66a7815f9bdb9e40613cf8c502
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 27123
+.   .   .   .   .   .   .   .   .   .   partido = 27
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = a21dba912d089638aaf6dcd11cf0ebd296864340e4705fb6efdc31b9bdc4b78e73941e1304059d272e2ce9ba469e4285418cd77d6829c8f9e32e08e896b1f105
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 36946
+.   .   .   .   .   .   .   .   .   .   partido = 36
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 339c65c9972cc1d2d4dde4a6c25144ec987a32f3885d026e5f8e9fb48df052c7a164c5daf5a428203bb98512ab2da9e22b800d914cb05c0c32754edd3c6ae702
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 40222
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b10b926202b8b41997a9f1818ba20bb3c5db53d202e831bb788863937809f0c787c38acd276e87f5e28311a977dbb7bb6a5eeefbb54fe33e0046817785f0fb02
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 40234
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 3e00077c578aae635285b551d1f74a77c8f08e0286389acaa20e718cd02d51a94dc755a63598fb48994dada686c7f8f361020c1602df9582a3ed8f3b5fe5cb03
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 40400
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 86d6b40fb5b1a85a8a76f605d5f721e0bdbf3d12ee866fd13e33301347557f43df683fb8048f549712f2dd38a08fb0d62a21eee206d4bd564ad0e76bf478e20d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 40900
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0314cfd888b9c7fc3a004a3f9f8428f90d2a7b5122ae63647e794879a7bf0cd55bb609b20009287e4571b4dabe417bcd749b7d16a208e5089c61d9346306f10e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44123
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = e8a7193691150791cb9e9bee66fc318067bf6df8a0c4466bbb8d512075f19bbbac1cce8f5b84296eee9c1ac4b7cc7326ed48a831c1c7f1a4290255d3ab504800
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44222
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 517c3c85c566c44b0708e7c8272148cb4478564eb71206ad0014a630b16b43e68375d99f5e5f0a669dd87b583630eac1e3486ce48c5de02ada5cc072d3fb9601
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44444
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 5491f0b2d322ee0ca51c3a34accc926e05b9313caa3f68320a4548e3e1c6b1da050aec2393cc6acc908d00bfa5d17bb19770d6c097bfd04a284701bd8c802803
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44555
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b99077f03d79ffb780fa1bd02fe8eb5ae2c02399c8e3bfd59e3f416847e216d518bc59dd595b13932600bdb5d55286a70ee598a49bba942b3c293f3cfafd730b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44999
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 4cb6e4ccf243705593e860700a50d326e21041724f156230eeb59af1d2251ef84d6ee2f0785ef729150679b448463ae3b37d8c12021f1faf869d933c7b4a500f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 45121
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f3934503b0277e2c74bf269d8bc2388f5860ac7f1a4b5294fc9f3358593a3067ec180cee4d214449857ed482a1b77249c1bff524e66bc4ce3229b0285e23c808
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 45123
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 135c4113c3b18ca73bd47d36ac11f56133e19c9be239e6253d02d9aa33ad7b54b04f9fa24fcb5831694bb6af937c9d27a5f3b217bc05704e0caba7a38bdf6a04
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 45190
+.   .   .   .   .   .   .   .   .   .   partido = 45
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 741a335fe5e2851426fd9047baf102f9232a775bd23c4a2be32fa2f537ed37ae4c51e9c3f28e93a46881cf42b8c435f0b302b7c45a557e406a0424cf2832e50b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 51100
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c43a332c8f3da0aa2d3dc9a29a397dac3f31d66ab5d58fa51d03abaa24c0c26754469afc0e5bcdfb7555486cab23154590262fdb87ed0c645111cb304b0f6102
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 51190
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2c8eefe1737e29763736ed1312408d4232ed4716f6ef0bdf03532ce369ec295282c50436e3358f4131441fe977a2939c051930710c340fec9e1bd2c398e64c0f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 51200
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = be2849fa94c71a1ca343c026dbed2cad40984084f68d6d32eb160c294eb67034013a5d48b8eb2c227f2818e2c91518f1c0a98322d6d93a725e3e65594b710b0b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 51222
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 892a36d30c891897b8b8284b1618dca64a3edb2bcb49a810310fee5f1d8554f26ca96cba85a318f9e09a4edf71cca6f818229f405a18fe65a5be7c3cae2c1906
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 51888
+.   .   .   .   .   .   .   .   .   .   partido = 51
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0535f821a7391f8474c122a734a73c003331cb9465916c59312efe77807f49dac8cf48f6a33cc4928fa1462d551938c0a34325ff9137f23f6a907f0a1ee41400
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55000
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 19f1f622b0a8f409025790287aefd8271714db7bd95d22ce7538c228e1f9747c252ceec285fd8a30057865878dc2bfcd50c597a4823652ed02f419fee279ef02
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55111
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 7eee1ca1ad8bd75eb171b6b26a991c71e11a1892f9363cfd7ea5ce81c873de4303f43936378e45bd0e125c304e954b251a889e2f96dfba850c1a0e6dc3186d0e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55333
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f57f54439c0da28604a8ecf37b41e472725fda394cd519df523db9bbecc3b93cf249060f4bf93f3dd9dca973d2fe6fe303a463477437c6f7bf83ccbb3d1b3509
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55555
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 3139e88721c04e72bb58b6f8e9f7753981af24baa72722b0b0cb0b4a2fc4ab41ee00d6b061b9d279eddb6904fd17d74ed91e27fa4ee33578cdfd871d5c690504
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55655
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 6433e1f2b7a88567cff8554d894063cebfde36919e4462780fda52f17dd2318ab6c8bc1d560216d7a243a3e681960ada3f15f4685ff02eeb477a28bd5474ad07
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55789
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 66b20046f4f509c11434f1870099f61c176bfde7d8a0460d78db0a893788271615cb9f13539f06506e54f7473c8166f4f5ad9bfa91cc742705dad328ea007d09
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55888
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8ee2d9971db716e33ea776340f986e0da319f9cee1ef96e41feb87a07a829b2c720000d00dcb551e1e04656ff6400753672c4344b6034c073e2f7d66cd32f006
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55999
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b6b1ec4ee598e34c73f66f243e403764c272ea07d0c97ba1bdcd87a85be809a180271b4f0a0810768ba3a96eaefbe6fa58ae435d361732fdd580272bbb59b702
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 65123
+.   .   .   .   .   .   .   .   .   .   partido = 65
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 5
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 53a5a08ab06609966c7ed5127ea32c30ba3e8e5ed2326827175d32ded7abd589a99b72613b074ed28b1b9b4f7789e892c14ed9d637e665ee1b755de60edd520e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 77200
+.   .   .   .   .   .   .   .   .   .   partido = 77
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ddfb1905a98b1bc916f6f4c2144c4de62269fb2c19e8bc12588f78a0e5ca39664378668c2cb0c86c4936e78ff506e76c8342f9909ddcf62594d96914ae8b4f09
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90000
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b2f8c159e25c838ef07d2a2da403813bb08a62d0e132bfdcbc95be6e85ad2c05eccedbd8d5187116b71df63027ad4943d06ed64b033326bd83ca958ec0ec1907
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90111
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = b4ea8e698b8e82e095f3357a422b4ac0c5960796783e0856e744f6cef40443cf7f639da3894b380c0d588720469a311f95ec8f4cf6ead3e50581c527bf5b2602
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90123
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = e798dff60cc4915a8b6762a3fe8c08823dcebd9a7b37f224ec56474aa86c78d955e5757de4c34fc35a82135a0ab7bd97b125e50ae5d0a01b62e9fefdc67b460f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90222
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f87835b8b5415356f835a718e06e8a56c236f8afc46f57790b05019917f78d09f31d4f333f173acfd80f85acf7f0fb0b9502a8f681021b97a6e6bb419a5fd806
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90321
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 50dc256f4b3d92568bbc43bec05799376d7e0aa28e1c3cdb41702b78925ae0f7658adb2ec48cdd1b3d20b9bcc27e259a15d1d9e39f337ca7393adeffccd6d806
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90888
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = f378477b1e09ea8284c3bf775ccdec2a92e43180feedcc26796c71bad7f63a0b14770e30a1224f15d0fdcbc029d534e6b6039225c0ceb9fe0d8d917409052707
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90900
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 051e085ee4aa9f3f8422832c589e14d6b242bbd44e5bbe4b86375d07365233506162fe53ea5434426eadd6981cad2d02204815ccb5ecda21359b91a9c5f1d70d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 90999
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = ace62e8068f779e0dd9c63af7341ccb9f40da96b9c8ec57ffbf686832126843aec3e9462e9184ab3d1eaa9ee2dd9c5fd8d0c54c623b3dcf7a336242136daa508
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 8
+.   .   .   .   .   .   .   .   .   tipoVoto = branco
+.   .   .   .   .   .   .   .   .   assinatura = 05a2bf51db2625d003a0990c7b69e9b7426159254f1cb62990c505cdad3f8117ee0b1368db616bfe3830683d1cec7c282cc7dcb4664bcc42873c9443ac76f809
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nulo
+.   .   .   .   .   .   .   .   .   assinatura = 47845db444d0d20ace0f1de4cffb8064baf43fecfca1c10479ff7e929dfa5c4fe0850ff462327eeac07282671dc1b1e01fb8762c822b2e3ad9b1eb5a5e10cc0a
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 9b3be4e2831b8911e023feb9f2dfbe9cec888f842b5fed0c916bd7172960888d49e80d7aefe8da051d8e4943d96d2c1c873b603e2f70a59d124e1954a79bd20f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 071c3568fbf70b69baa06b492888d81d95b4d5486f27c7800c627fc14ec0a1fb30f538871340261d272ce2b0f495106f486f6f1a8f9f840bf7661850055dbc00
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 5d30f44af12920ee7634d3fd3bc97d793cf00f6d354694d9616877fdd239ecba8e0e36e48f28e73efec8032802b32a79b0938e05f32cc158268a671e0f4d0905
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = e1a3059eb987aea4cb32098ce1a6cddb67dd8ecdc77f2270cfbb24c330afc43cab76fb451cbb6cc77662ba8cacdec6e659c44130dd9b9a4ca924a2597582b907
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 19
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = d9d8855f64a53c9d3ee12a71752fdbf83283c0453eab2114181c0ee4b2d12e6e0fd995982d7f92fab0440c2b1f253c2a228548ee61f928c117f5a8eaeca6850c
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 3
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = 4d830a555c7e799056071de2536ce61f1799acc6daf9b9f865b148b032cd41f211951e801917a816b9d23db9e86b1fa7548d89bca2fc648e3ba6a6e62462910e
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 40
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   .   .   assinatura = f066d09358210ca1d8162cafb1ec398fb5beffdaa6a27c111a87cf5c9bb5648fcbed49f83d448eea80d02cb7d5602784bd261ebb7f6dedbd5a344c18543a630d
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 8
+.   .   .   .   .   .   .   .   .   tipoVoto = legenda
+.   .   .   .   .   .   .   ] <== votosVotaveis
+.   .   .   .   .   ] <== totaisVotosCargo
+.   .   .   .   .   qtdComparecimento = 257
+.   .   .   .   .   tipoCargo = majoritario
+.   .   .   .   .   totaisVotosCargo: [
+.   .   .   .   .   .   .   codigoCargo = ('cargoConstitucional', 'senador')
+.   .   .   .   .   .   .   ordemImpressao = 3
+.   .   .   .   .   .   .   votosVotaveis: [
+.   .   .   .   .   .   .   .   .   assinatura = ae4794b7d52245382d4fee215180dd70bc0433c24f960e6949c5f9ff4a2dc29e761330341bf57c76d450e4b3b56a23eabd299939b8f67a48a51128cc4e660b0c
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 131
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 17
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = de4d89eec3015855c205835b8281e4e1f7ec7e3766a5529a43d09dc4d8448f71de09f6740dec26a47c870844c4f36d038d72185428c620aa284f849fbc638104
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 199
+.   .   .   .   .   .   .   .   .   .   partido = 19
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 46
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 48e55b9f51f808beee7b44e7130949231664feba54783099756e91853722c07d9bdd8693efa395e83babac2ae06451b731436268907e240438dc570cca81c605
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 222
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 31
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 266ae9250f68fb351553d123d00c65512febf07ba6a3d943b6cadc09985adb2bad3c7530575f139f2328a4cb445de20a2f2c0f27813901fefaadc1dd0a512809
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 364
+.   .   .   .   .   .   .   .   .   .   partido = 36
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 592711a821ff8db5ebfa38d224613bbc7ea3e80eb672c3f1b0124075b272b675ead7852464a07d1906ae2aea26ce4d497add630a643c742880344f6edb765507
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 400
+.   .   .   .   .   .   .   .   .   .   partido = 40
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 57
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 0b05005729c6a9f582fb28dd40341a890f2b2a58fa1146d8c157b348abca2245565df2665d0c1a408c168648af7781be421d581f288d11eae10818cf46fb040b
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 444
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 73
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 49b5e3f46dd9386b40e3166c7db46aa69f7031b3f4c2734aa60bb54ccb6f5096a9d7beeb62c03d611e5da0b4e32486d043adbdf689dd4c33597b7b93fdc3fb0f
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 900
+.   .   .   .   .   .   .   .   .   .   partido = 90
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8002037e85ba33712a9c4d6d8af23b6e2eacbe5f4c84adfa3f0d05b061f52d6d1f0cb99a7b15aa848e81f74ad4237ccfb4b6c9a5fd3bf8640e73cadbacf6ca0f
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 10
+.   .   .   .   .   .   .   .   .   tipoVoto = branco
+.   .   .   .   .   .   .   .   .   assinatura = 127e4bd70d54927318b13ee11593082510781175b3b1d9d31c2cf1b4f81c79138264fb90c96fc325a51e8ca00e385247fb7ee163fcbc0161741daa1ebc45f40d
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 15
+.   .   .   .   .   .   .   .   .   tipoVoto = nulo
+.   .   .   .   .   .   .   ] <== votosVotaveis
+.   .   .   .   .   .   .   codigoCargo = ('cargoConstitucional', 'governador')
+.   .   .   .   .   .   .   ordemImpressao = 4
+.   .   .   .   .   .   .   votosVotaveis: [
+.   .   .   .   .   .   .   .   .   assinatura = 45f6a2c5f96b8282afa9b3999edc30959a1d0de2f9aa01620100814991da3891d2db8ef14af25a56d054fd85a5a493b409ac297c7cc550961d5c5207abfc9406
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 11
+.   .   .   .   .   .   .   .   .   .   partido = 11
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 146
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 207e299c1a46e6e3ef65bdf517f3a5d2baf56717033ff5d29b76d1a8e5efc6a32d62cbe381046494d4fe9d22859794f4f940b4256f3a877c2a91d9056f6d9505
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 47
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 513996b8c2e3fc4c3675143d0de4fb64ead81956f8e2a774c267069fb912ba1bf50ace2274193d70957b3c94e8deac96a13394a3a12e7164ba88bc7f46660802
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 35
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 20b800c2f4a5687ecb3a17ed8668f1d3530291fc6c27a57ff84acf69c4d86e749539f19e23e1197112ff52866e1071522d8b4d03262eaf8cb5ecad4227fef507
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 36
+.   .   .   .   .   .   .   .   .   .   partido = 36
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 2321811cc1cff0317f5f4ca469fcb7564118dcb883865f60c5a1022862461d977b5324add6f50b6f4a1390864fe8009ed3d8c8dd835d916052150aa5e9e37401
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 44
+.   .   .   .   .   .   .   .   .   .   partido = 44
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 2
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 450baa01c0a845b8ecab585bc52b9456b6284020428c2ec266becf6d4fdd2ef836881a7560345bdf6f3909a211f16e924d5180d19846a23d0d93f0c9631a5302
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 55
+.   .   .   .   .   .   .   .   .   .   partido = 55
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 10
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = aa86735cab7e26e676b06eb7c38f194eac421a711d74214268ed920be12c53a0aa1acd46dab007447ead3e4e0d2f9a6e971a5a07e4ead105b88a72ad76f76908
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 5
+.   .   .   .   .   .   .   .   .   tipoVoto = branco
+.   .   .   .   .   .   .   .   .   assinatura = 887069605edc89e22a955a8d4b85095d159fb5b1c039aefc924a837e2e2f4f0dee6e5d5eb0e06490cafef9388612b0e752e8069275a21601422a6d3116e01a07
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 11
+.   .   .   .   .   .   .   .   .   tipoVoto = nulo
+.   .   .   .   .   .   .   ] <== votosVotaveis
+.   .   .   .   .   ] <== totaisVotosCargo
+.   .   .   ] <== resultadosVotacao
+.   .   .   idEleicao = 544
+.   .   .   qtdEleitoresAptos = 316
+.   .   .   resultadosVotacao: [
+.   .   .   .   .   qtdComparecimento = 257
+.   .   .   .   .   tipoCargo = majoritario
+.   .   .   .   .   totaisVotosCargo: [
+.   .   .   .   .   .   .   codigoCargo = ('cargoConstitucional', 'presidente')
+.   .   .   .   .   .   .   ordemImpressao = 5
+.   .   .   .   .   .   .   votosVotaveis: [
+.   .   .   .   .   .   .   .   .   assinatura = 2d7032f2553022befe966f0a49284c7249f33c16b69b5222928b4a4f3754fa67fc8a86acf694a64a2d5b5245741111353427190eae401b9a13fe7d766088c303
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 12
+.   .   .   .   .   .   .   .   .   .   partido = 12
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 7
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = fc286b22e7455fb8f27f0cbf5d8baf4ad8bd265ccded383f0143faa62f0c44b4459a3272c35331a9f1d608081ac7cfe508b42fbe11781610a94aa9c3994db705
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 13
+.   .   .   .   .   .   .   .   .   .   partido = 13
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 63
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c3582a20bf7626e8703d38a989dddb89a12187b158a909151927248dc557511e0bd40c04ada325a0616b0bc345d3c9158f2a2b18e80c81e14d0d3c2430d3f600
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 14
+.   .   .   .   .   .   .   .   .   .   partido = 14
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 1
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 7f2050619ddd7f88af2cf2e0d6f8a696e4d2a50691afc9fa60e85309755539d8acdd271d7cf59d8077c691f7628715569ca3d3a0e5031bc4d387f0694504d705
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 15
+.   .   .   .   .   .   .   .   .   .   partido = 15
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 15
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = 8b4a2b880c1f8787d924c98d6e6a0593fb483cffbf6be49d6804e6dc98f6e09068a2aa3308e9f5e142b1ae0ca84ef21665b55586427f3338714a8f03c2349501
+.   .   .   .   .   .   .   .   .   identificacaoVotavel:
+.   .   .   .   .   .   .   .   .   .   codigo = 22
+.   .   .   .   .   .   .   .   .   .   partido = 22
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 163
+.   .   .   .   .   .   .   .   .   tipoVoto = nominal
+.   .   .   .   .   .   .   .   .   assinatura = c0e9f4a44d598fe63b419452dc319acdd757d0af0161967725ceb680833fb2ba6fd34ff84ecabbf5611857c1882f804bc0c0524ac06301dc0d5a96dc112cc002
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = branco
+.   .   .   .   .   .   .   .   .   assinatura = 745faa0d8c93a3cd8ef7b6c888774af2cdf5ebc5f3b9727343f2249b89bb85c692c852795a5356dc1bb93e7838b960687e4509ac76d5c141e68b0af72cc1210f
+.   .   .   .   .   .   .   .   .   quantidadeVotos = 4
+.   .   .   .   .   .   .   .   .   tipoVoto = nulo
+.   .   .   .   .   .   .   ] <== votosVotaveis
+.   .   .   .   .   ] <== totaisVotosCargo
+.   .   .   ] <== resultadosVotacao
+.   ] <== resultadosVotacaoPorEleicao
+.   urna:
+.   .   correspondenciaResultado:
+.   .   .   carga:
+.   .   .   .   codigoCarga = 593158829974868515668550
+.   .   .   .   dataHoraCarga = 20220925T122800
+.   .   .   .   numeroInternoUrna = 1663985
+.   .   .   .   numeroSerieFC = 5ef7ccdd
+.   .   .   identificacao = ('identificacaoSecaoEleitoral', {'municipioZona': {'municipio': 1007, 'zona': 9}, 'local': 1, 'secao': 120})
+.   .   numeroSerieFV = 569c6f46
+.   .   tipoArquivo = votacaoUE
+.   .   tipoUrna = secao
+.   .   versaoVotacao = 8.26.0.0 - Onça-pintada
