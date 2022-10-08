@@ -33,9 +33,49 @@ ufs = [
     'ZZ',
 ]
 
-db = dataset.connect('sqlite:///bu.db')
-table = db['bu']
+inttypes = [
+    'ANO_ELEICAO',
+    'CD_TIPO_ELEICAO',
+    'CD_PLEITO',
+    'NR_TURNO',
+    'CD_ELEICAO',
+    'CD_MUNICIPIO',
+    'NR_ZONA',
+    'NR_SECAO',
+    'NR_LOCAL_VOTACAO',
+    'CD_CARGO_PERGUNTA',
+    'NR_PARTIDO',
+    'QT_APTOS',
+    'QT_COMPARECIMENTO',
+    'QT_ABSTENCOES',
+    'CD_TIPO_URNA',
+    'CD_TIPO_VOTAVEL',
+    'NR_VOTAVEL',
+    'QT_VOTOS',
+    'NR_URNA_EFETIVADA',
+    'QT_ELEITORES_BIOMETRIA_NH',
+    'NR_JUNTA_APURADORA',
+    'NR_TURMA_APURADORA',
+]
 
+deletetypes = [
+    'DT_GERACAO',
+    'HH_GERACAO',
+    'NM_TIPO_ELEICAO',
+    'DT_PLEITO',
+    'DS_ELEICAO',
+    'DT_BU_RECEBIDO',
+    'DS_TIPO_URNA',
+    'CD_CARGA_1_URNA_EFETIVADA',
+    'CD_CARGA_2_URNA_EFETIVADA',
+    'CD_FLASHCARD_URNA_EFETIVADA',
+    'DT_CARGA_URNA_EFETIVADA',
+    'DS_CARGO_PERGUNTA_SECAO',
+    'DS_AGREGADAS',
+    'DT_ABERTURA',
+    'DT_ENCERRAMENTO',
+    'DT_EMISSAO_BU',
+]
 
 def chunker(iterable, size):
     chunk = []
@@ -47,10 +87,38 @@ def chunker(iterable, size):
     if chunk:
         yield chunk
 
-for uf in ufs:
-    filename = f'buzips/bweb_1t_{uf}_051020221321.csv'
-    print(f'{uf}...')
-    with open(filename, encoding='iso-8859-1') as f:
-        for lines in chunker(csv.DictReader(f, delimiter=';', quotechar='"'), 10000):
-            table.insert_many(lines)
-print('ok')
+
+def create_table(db, line):
+    ctypes = {k:db.types.text for k in line.keys()}
+    for k in inttypes:
+        ctypes[k] = db.types.bigint
+    for k in deletetypes:
+        del ctypes[k]
+    table = db.create_table('bu')
+    for k in ctypes:
+        table.create_column(k, ctypes[k])
+    return table
+
+
+def prepare(lines):
+    for line in lines:
+        for k in deletetypes:
+            del line[k]
+
+def vai():
+    db = dataset.connect('sqlite:///bu.db')
+    table = None
+    is_first = True
+    for uf in ufs:
+        filename = f'buzips/bweb_1t_{uf}_051020221321.csv'
+        print(f'{uf}...')
+        with open(filename, encoding='iso-8859-1') as f:
+            for lines in chunker(csv.DictReader(f, delimiter=';', quotechar='"'), 100000):
+                if is_first:
+                    table = create_table(db, lines[0])
+                    is_first = False
+                prepare(lines)
+                table.insert_many(lines, chunk_size=100000)
+    print('ok')
+
+vai()

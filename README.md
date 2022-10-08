@@ -18,3 +18,41 @@ Mas, enquanto eu tava fazendo isso, o TSE disponibilizou os dados consolidados n
 O script `baixa_transparencia.sh` faz esse download consolidado na pasta `buzips`
 
 O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite relacional que eu queria
+
+Exemplos de queries:
+
+Essa query mostra os votos de uma secao. 
+A mesma informação que tem aqui: https://resultados.tse.jus.br/oficial/app/index.html#/eleicao;e=e544;uf=al;ufbu=al;mubu=27049;zn=0046;se=0108/dados-de-urna/boletim-de-urna
+```sql
+select 
+	SG_UF UF,
+	CD_MUNICIPIO,
+	NM_MUNICIPIO,
+	NR_ZONA ZONA,
+	NR_SECAO SECAO,
+	DS_CARGO_PERGUNTA CARGO,
+	DS_TIPO_VOTAVEL TIPO_VOTO,
+	NR_VOTAVEL NR_VOTO,
+	NM_VOTAVEL NM_VOTO,
+	QT_VOTOS,
+	QT_APTOS,
+	QT_COMPARECIMENTO 
+from bu 
+where SG_UF = 'AL'
+  and NM_MUNICIPIO = 'ESTRELA DE ALAGOAS' -- ou pode filtrar por CD_MUNICIPIO = 27049
+  and NR_ZONA = 46
+  and NR_SECAO = 108
+order by cargo, QT_VOTOS desc
+```
+
+Total geral de Presidente na Bahia
+```sql
+select 
+	NR_VOTAVEL NR_VOTO,
+	NM_VOTAVEL NM_VOTO,
+	sum(QT_VOTOS)
+from bu 
+where DS_CARGO_PERGUNTA = 'Presidente' and SG_UF = 'BA'
+group by 1, 2
+order by 3 desc
+```
