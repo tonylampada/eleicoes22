@@ -1,6 +1,6 @@
-#eleicoes 2022
+# eleicoes 2022
 
-brincadeirinhas com os dados disponibilizados pelo TSE
+### brincadeirinhas com os dados disponibilizados pelo TSE
 
 Normalmente eu gosto de brincar com os dados abertos disponibilizados pelo TSE sobre as eleicoes.
 Esse ano eu decidi que iria tentar construir um banquinho relacional em sqlite com os dados da eleicao.
@@ -17,4 +17,4 @@ Mas, enquanto eu tava fazendo isso, o TSE disponibilizou os dados consolidados n
 
 O script `baixa_transparencia.sh` faz esse download consolidado na pasta `buzips`
 
-O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite relacional
+O script `constroi_banco.py` constroi o arquivo bu.db que é o banco sqlite relacional que eu queria
