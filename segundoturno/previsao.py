@@ -36,7 +36,8 @@ for d in destados[::-1]:
 print(pvlula, pvbolsonaro)
 
 print(f'seções totalizadas {dbr["psi"]}%')
-print('-----------------')
+print('--------ATUAL---------')
+print(f'{dbr["psi"]}% apurado')
 candbr = dbr['cand']
 candbr = sorted(dbr['cand'], key=lambda c:c['nm'])
 for c in candbr:
