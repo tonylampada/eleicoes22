@@ -33,7 +33,7 @@ Fazendo umas analises preliminares, tem umas coisas estranhas mesmo. Alguns exem
 ![image](https://user-images.githubusercontent.com/218821/200133385-7b4c0d3c-a233-4be7-9f26-ed98a29dc1d7.png)
 ![image](https://user-images.githubusercontent.com/218821/200133415-22f5f2fc-a82c-411f-a212-dbf278ab09a0.png)
 
-### 3. Lula tem uma grande vantagem absoluta nas urnas velhas em quase todos os estados
+### 3. Lula tem uma grande vantagem absoluta nas urnas velhas em quase todos os estados (~1.700.000)
 
 ![image](https://user-images.githubusercontent.com/218821/200133484-19d9fe17-8f45-4e81-8124-d8b6862b5b7f.png)
 ![image](https://user-images.githubusercontent.com/218821/200133513-4ac53439-4048-4cfd-a197-6cfa2ae34043.png)
