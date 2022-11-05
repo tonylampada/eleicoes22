@@ -35,3 +35,6 @@ get_resumo se
 get_resumo to
 get_resumo df
 get_resumo zz
+
+
+python3 previsao.py
