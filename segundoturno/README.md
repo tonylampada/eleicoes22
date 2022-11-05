@@ -9,8 +9,11 @@ E o comportamento desses dois tipos de urna geram padrões diferentes, verificá
 
 Vou tentar ver se consigo reproduzir as conclusões da turma do la derecha diario a partir dos dados brutos do TSE
 
-A primeira coisa é construir um banquinho com os dados
-(se vc quiser só baixar o banco que eu já construí, [tá aqui](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X))
+A primeira coisa é construir um banquinho com os dados.
+
+Se vc quiser só baixar o banco que eu já construí
+ * [Banco completo (sqlite)](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X))
+ * [Resumo da tabela urna em csv](https://github.com/tonylampada/eleicoes22/blob/main/segundoturno/urnas.csv.zip) - (pequenininho. cabe na memória de um panda fácil! ;-))
 
 Pra construir o banco:
 
