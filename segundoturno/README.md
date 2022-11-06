@@ -24,12 +24,6 @@ Pra construir o banco:
 Fazendo umas analises preliminares, tem umas coisas estranhas mesmo. Alguns exemplos abaixo.
 ([resultados das queries disponiveis nesse google sheets](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207))
 
-## Análises feitas por outras pessoas:
-
-* [Fábio Emanuel](https://github.com/fabio-emanuel/Segundo_Turno_2022/blob/main/Golpista.ipynb)
-
-(se vc fez alguma análise, por gentileza abre uma issue e manda o link pra eu botar aqui)
-
 ### 1. Por quê é muito mais provável ter unas velhas do que novas com zero votos no bozo?
 ![image](https://user-images.githubusercontent.com/218821/200133308-7c0f11d2-d1d3-4419-ab53-a2b3cda1ce8f.png)
 ![image](https://user-images.githubusercontent.com/218821/200133344-55b2f9fa-c268-4f0c-9525-193daa0efba4.png)
@@ -116,3 +110,9 @@ Batom na cueca do TSE? Parece.
 Eu não consigo explicar por quê o comportamento do eleitor mudaria dependendo do modelo da urna que ele vota.
 Se alguém puder investigar mais e puder jogar mais insight em cima, ótimo. 
 Espero que o [banco consolidado](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X) ou o [csv resumido](https://github.com/tonylampada/eleicoes22/blob/main/segundoturno/urnas.csv.zip) disponivel aqui seja util pra que mais gente faça analises que completem a minha.
+
+## Análises feitas por outras pessoas:
+
+* [Fábio Emanuel](https://github.com/fabio-emanuel/Segundo_Turno_2022/blob/main/Golpista.ipynb)
+
+(se vc fez alguma análise, por gentileza abre uma issue e manda o link pra eu botar aqui)
