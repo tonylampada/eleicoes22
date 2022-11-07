@@ -104,6 +104,25 @@ dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLF
 
 Bom aí fica difícil explicar isso aí. Como que o comportamento do eleitor muda dependendo da urna dentro da mesma zona?
 
+#### 5.1 Outra variavel só pra comparar: urnas ímpares dão vantagem pro lula?
+
+O modelo da urna não deveria influenciar no comportamento do eleitor. Não deveria existir uma correlação entre os fatos "urna velha" e "vantagem pro lula", do mesmo jeito que não deveria existir uma correlação entre "o número da seção eleitoral é ímpar" e "vantagem pro lula". Vamos testar essa hipótese nas mesmas 461 urnas.
+
+Query: zonas eleitorais (interior e capital) com urnas mistas (são 461 zonas) e votos divididos em urnas pares vs ímpares
+![image](https://user-images.githubusercontent.com/218821/200203613-a4e2b062-6d2d-4771-acad-8f030ea73ab3.png)
+
+dados:
+![image](https://user-images.githubusercontent.com/218821/200203635-96bbe66c-36e8-43a0-aa2f-93b4ec932ff2.png)
+
+Colocando a vantagem_percentual_lula num grafico:
+![image](https://user-images.githubusercontent.com/218821/200203657-c6f8dcfd-467f-4bf0-9a5a-dc7adb011a80.png)
+
+dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207)
+
+Veja que não tem viés claro nem pra cima nem pra baixo (**esse é o comportamento esperado quando não uma coisa não tem a ver com a outra!**)
+
+Compare isso com o gráfico anterior. Se a urna velha não tivesse correlação com vantagem pro lula, a chance de ter uma maioria positiva como aquela seria menor que 0.01%. A correlação entre urna velha e vantagem pro lula é incontestável. Tudo bem que correlação não é causa. Mas a próxima pergunta legítima pro TSE seria: como vc distribuiu essas urnas? A gente tá vendo que a distribuição **não foi aleatórea**. Se fosse aleatórea, essa correlação não existiria. Então, como essa distribuição foi feita?
+
 ### Conclusão
 
 Batom na cueca do TSE? Parece.
