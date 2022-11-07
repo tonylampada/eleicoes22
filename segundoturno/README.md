@@ -39,26 +39,26 @@ dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLF
 dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207)
 
 
-### 3. Lula tem uma grande vantagem absoluta nas urnas velhas em quase todos os estados (quase 1.800.000)
+### 3. Lula tem uma grande vantagem absoluta nas urnas velhas em quase todos os estados (mais de 2.400.000 votos)
 
-![image](https://user-images.githubusercontent.com/218821/200133484-19d9fe17-8f45-4e81-8124-d8b6862b5b7f.png)
-![image](https://user-images.githubusercontent.com/218821/200133513-4ac53439-4048-4cfd-a197-6cfa2ae34043.png)
+![image](https://user-images.githubusercontent.com/218821/200375231-9098024b-c04a-48e1-b4fe-1fd226012b81.png)
+![image](https://user-images.githubusercontent.com/218821/200375455-5630f6eb-c0f3-4d8c-b130-e0da1bbec978.png)
 
 dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207)
 
 #### 3.1 Mas isso não aparece nas capitais. A maior parte das capitais só tem urna nova.
 
-![image](https://user-images.githubusercontent.com/218821/200133540-b7a28edd-b715-4b49-be56-82468be5f365.png)
-![image](https://user-images.githubusercontent.com/218821/200133560-84df791e-7bd3-4f77-a195-7707dd1396d3.png)
+![image](https://user-images.githubusercontent.com/218821/200375695-1500cd84-ec3c-4805-b843-3078ec8607a3.png)
+![image](https://user-images.githubusercontent.com/218821/200375887-132dc9b6-6094-4e34-9fa9-d2859126f9ff.png)
 
-Diferencinha mínima. Nada pra ver aqui
+Diferencinha mínima. 40mil votos em SP. Pega nada.
 
 dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207)
 
 #### 3.2 No interior a diferença aparece
 
-![image](https://user-images.githubusercontent.com/218821/200133598-241e21b5-0e3c-4c47-9f8b-bb30d7be276e.png)
-![image](https://user-images.githubusercontent.com/218821/200133615-ae9e7d53-c087-40d6-8b09-c52b94f1536c.png)
+![image](https://user-images.githubusercontent.com/218821/200375979-dcd857d4-736c-4a91-8498-ce9bd5ae32be.png)
+![image](https://user-images.githubusercontent.com/218821/200376047-8b271f7f-e129-4e1c-b4c9-ea616eed34c1.png)
 
 dados na [planilha](https://docs.google.com/spreadsheets/d/1YOYrAfUAJRc8i9ACpOLFf10lvBfZpE_HPXc_xoG6M00/edit#gid=1887669207)
 
@@ -70,13 +70,13 @@ Sim, tem alguns.
 ### 4. Vantagem pro Lula nos municípios com urnas mistas
 
 Query: municípios do interior com urnas mistas (são 303 municípios)
-![image](https://user-images.githubusercontent.com/218821/200170562-0490d563-e519-4985-bd30-8911656fcaad.png)
+![image](https://user-images.githubusercontent.com/218821/200376233-b649a2b3-426d-4433-963c-7bcbbf49015e.png)
 
 dados:
-![image](https://user-images.githubusercontent.com/218821/200170649-94b30ff8-35b0-4a8b-a397-0af4aaec14a8.png)
+![image](https://user-images.githubusercontent.com/218821/200376297-edf13128-8540-44be-8288-bc1beefef0bf.png)
 
 Colocando a vantagem_percentual_lula num grafico:
-![image](https://user-images.githubusercontent.com/218821/200170688-457244a3-b5bb-4432-95da-578af582aa0f.png)
+![image](https://user-images.githubusercontent.com/218821/200376354-6bdcd57d-84fb-41f0-a5d7-e33c4b2fc129.png)
 
 Viés claro pra cima (vantagem lula > 0)
 
@@ -90,10 +90,10 @@ Sim, tem algumas.
 ### 5. Vantagem pro Lula nas zonas eleitorais com urnas mistas
 
 Query: zonas eleitorais (interior e capital) com urnas mistas (são 461 zonas)
-![image](https://user-images.githubusercontent.com/218821/200170877-247c2303-de1a-4b46-9287-707133b8292a.png)
+![image](https://user-images.githubusercontent.com/218821/200376641-ec62b4c4-2091-464a-a0c3-7a3659cd5470.png)
 
 dados:
-![image](https://user-images.githubusercontent.com/218821/200170898-a4a3b520-267c-4a40-bd2c-44dcfecae126.png)
+![image](https://user-images.githubusercontent.com/218821/200376704-0fe4ec04-1120-40fe-9338-558bbbb1bb57.png)
 
 Colocando a vantagem_percentual_lula num grafico:
 ![image](https://user-images.githubusercontent.com/218821/200170923-dd67cd88-1b27-4d0a-9bc2-da0d0f30a8bd.png)
@@ -126,7 +126,26 @@ Compare isso com o gráfico anterior. Se a urna velha não tivesse correlação 
 ### Conclusão
 
 Batom na cueca do TSE? Parece.
+
+Existe uma **correlação** (que *não necessariamente é causalidade*) incontestável entre urna velha e vantagem pro lula. Isso é fato, não opinião.
+
+Mas dado que é fato, tem uma explicação. A gente não sabe qual é, mas tem.
 Eu não consigo explicar por quê o comportamento do eleitor mudaria dependendo do modelo da urna que ele vota.
+
+Então, existem algumas hipóteses que explicariam esse fato.
+
+* a) A urna velha rouba pro lula (e nesse caso, se os votos do modelo UE2020 servem como "pesquisa eleitoral" isso teria trocado ~2400000 a favor do lula - mais do que suficiente pra mudar o resultado da eleição)
+* b) A urna **nova** rouba pro bozo
+* c) A distribuição de urnas velhas e novas (mesmo dentro de uma mesma zona) obedece um critério social tal que as populações que votam nessas urnas realmente se comportam diferente.
+
+O que fazer com isso?
+
+* Quem confia mais no TSE, acredita em c)
+* Quem desconfia, provavelmente acredita em a)
+* E acho q ninguem realmente acredita em b), mas é uma possibilidade (menor pq teve muito mais urnas zeradas pro bozo), mas pra ser justo, vale listar aqui.
+
+De todo jeito o TSE (que estaria na posição de defender c) precisaria **explicar qual foi o criterio de distribuição** de modelos de urnas pelo Brasil.
+
 Se alguém puder investigar mais e puder jogar mais insight em cima, ótimo. 
 Espero que o [banco consolidado](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X) ou o [csv resumido](https://github.com/tonylampada/eleicoes22/blob/main/segundoturno/urnas.csv.zip) disponivel aqui seja util pra que mais gente faça analises que completem a minha.
 
