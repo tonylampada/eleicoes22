@@ -62,9 +62,6 @@ def create_table(db, line):
         table.create_column(k, ctypes[k])
     return table
 
-def _asdate(s):
-    return datetime.strptime(s, '%d/%m/%Y %H:%M:%S') if s else None
-
 def prepare(lines):
     for line in lines:
         for k in deletetypes:

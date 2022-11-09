@@ -9,6 +9,17 @@ function vaibu {
     rm 2t_bucsv/*.pdf
 }
 
+function vaieleitorado {
+	uf=$1
+    echo vai eleitorado $uf ...
+    cd 2t_eleitorado
+    unzip perfil_${uf}.zip
+    cd ..
+    python load_eleitorado_secao.py $uf
+    rm 2t_eleitorado/*.csv
+    rm 2t_eleitorado/*.pdf
+}
+
 rm 2t_bucsv/bweb*
 rm 2t_bucsv/*.pdf
 rm eleicao22_2t.db*
@@ -46,4 +57,37 @@ python load_logs.py
 
 yes | unzip 2t_eleitorado/local_votacao.zip -d 2t_eleitorado
 yes | unzip 2t_eleitorado/perfil.zip -d 2t_eleitorado
-python load_eleitorado.py
+python load_locais.py
+python load_eleitorado_zona.py
+
+rm 2t_eleitorado/*.csv
+rm 2t_eleitorado/*.pdf
+
+vaieleitorado AC
+vaieleitorado AL
+vaieleitorado AP
+vaieleitorado AM
+vaieleitorado BA
+vaieleitorado CE
+vaieleitorado ES
+vaieleitorado GO
+vaieleitorado MA
+vaieleitorado MT
+vaieleitorado MS
+vaieleitorado MG
+vaieleitorado PA
+vaieleitorado PB
+vaieleitorado PR
+vaieleitorado PE
+vaieleitorado PI
+vaieleitorado RJ
+vaieleitorado RN
+vaieleitorado RS
+vaieleitorado RO
+vaieleitorado RR
+vaieleitorado SC
+vaieleitorado SP
+vaieleitorado SE
+vaieleitorado TO
+vaieleitorado DF
+vaieleitorado ZZ
