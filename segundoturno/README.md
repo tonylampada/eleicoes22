@@ -241,5 +241,6 @@ Disclaimer: ficando um pouquinho político aqui.
 ## Análises feitas por outras pessoas:
 
 * [Fábio Emanuel](https://github.com/fabio-emanuel/Segundo_Turno_2022/blob/main/Golpista.ipynb)
+* [Pedro Nauck](https://github.com/pedronauck/eleicoes2022/blob/main/README.md)
 
 (se vc fez alguma análise, por gentileza abre uma issue e manda o link pra eu botar aqui)
