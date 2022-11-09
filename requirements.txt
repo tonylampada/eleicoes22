@@ -17,3 +17,4 @@ pyparsing==3.0.9
 SQLAlchemy==1.4.41
 tablib==3.2.1
 wcwidth==0.2.5
+py7zr==0.20.2

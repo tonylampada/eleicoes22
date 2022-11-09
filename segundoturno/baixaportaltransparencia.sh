@@ -1,4 +1,5 @@
 mkdir 1t_bucsv 2t_bucsv 1t_logs 2t_logs
+mkdir 2t_eleitorado
 
 function get_zip {
 	uf=$1
@@ -17,6 +18,10 @@ function sobralogs {
 	rm 2t_logs/$uf/*.vscmr
 }
 
+function get_perfil {
+	uf=$1
+	wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitor_secao/perfil_eleitor_secao_2022_${uf}.zip -O 2t_eleitorado/perfil_${uf}.zip
+}
 
 get_zip AC
 get_zip AL
@@ -75,3 +80,36 @@ sobralogs SE
 sobralogs TO
 sobralogs DF
 sobralogs ZZ
+
+wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2022.zip -O 2t_eleitorado/local_votacao.zip
+wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitorado/perfil_eleitorado_2022.zip -O 2t_eleitorado/perfil.zip
+
+
+get_perfil AC
+get_perfil AL
+get_perfil AP
+get_perfil AM
+get_perfil BA
+get_perfil CE
+get_perfil ES
+get_perfil GO
+get_perfil MA
+get_perfil MT
+get_perfil MS
+get_perfil MG
+get_perfil PA
+get_perfil PB
+get_perfil PR
+get_perfil PE
+get_perfil PI
+get_perfil RJ
+get_perfil RN
+get_perfil RS
+get_perfil RO
+get_perfil RR
+get_perfil SC
+get_perfil SP
+get_perfil SE
+get_perfil TO
+get_perfil DF
+get_perfil ZZ
