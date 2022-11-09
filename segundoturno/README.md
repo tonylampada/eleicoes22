@@ -149,6 +149,95 @@ De todo jeito o TSE (que estaria na posição de defender c) precisaria **explic
 Se alguém puder investigar mais e puder jogar mais insight em cima, ótimo. 
 Espero que o [banco consolidado](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X) ou o [csv resumido](https://github.com/tonylampada/eleicoes22/blob/main/segundoturno/urnas.csv.zip) disponivel aqui seja util pra que mais gente faça analises que completem a minha.
 
+### ATENÇÃO! UPDATE IMPORTANTE!
+
+Ontem de noite (8/11) eu tava cavucando um pouco mais nos dados e percebi que tem mais dados interessantes pra dar um "duplo clique" e enxergar melhor.
+A tabela `bu` do meu banco tem a coluna NR_LOCAL_VOTACAO que representa um id da escola de votação.
+Com isso é possível "descer mais um nível de zoom" e agrupar as urnas de uma zona **por local de votação**.
+Usando isso, a gente em tese remove qualquer variação de comportamento do eleitor devido a diferença do local de votação.
+A premissa que eleitores que votam no mesmo lugar são mais homogêneos faz bastante sentido.
+
+Como não tinha essa coluna na minha tabela `urna`, eu tive que atualizar meu banco. Adicionei essa coluna e fiz mais alguns "upgrades" no banco:
+
+* Adicionei o dataset dos [locais de votação](https://dadosabertos.tse.jus.br/dataset/eleitorado-2022/resource/3b003555-c69f-49cb-9c15-2700279520c7) que tem inclusive o lat-long da urna!. Isso entrou na tabela `urna`.
+* Adicionei o dataset do [perfil dos eleitores](https://dadosabertos.tse.jus.br/dataset/eleitorado-2022) em cada zona/urna (escolaridade, faixa etaria e tal). Isso entrou nas tabelas `perfil_eleitorado_zona` e `perfil_eleitorado_secao`
+
+Com isso dá pra fazer análises mais bacanas. Se vc já tinha baixado meus dados antes (banco e planilha), recomendo baixar de novo pq tem mais informação lá. Os links estão ali no topo.
+
+Então vamo pra NOVAS ANÁLISES.
+
+### 6. Lula tem vantagem nas ESCOLAS (locais de votação) mistas?
+
+Spoiler: SIM, um pouco, mas é uma vantagem super dentro do que é possível estatisticamente.
+
+Query: locais de votação com urnas mistas (são 163 escolas)
+![image](https://user-images.githubusercontent.com/218821/200926105-eeb1a6d8-25e2-43cd-9ffd-6cdbaa0be2c9.png)
+
+dados:
+![image](https://user-images.githubusercontent.com/218821/200926157-4a06429f-dd85-465d-af04-aa42af2cb6bb.png)
+
+Colocando a vantagem_percentual_lula num grafico:
+![image](https://user-images.githubusercontent.com/218821/200926259-fca5d87c-7a26-4d00-be5e-5e8d7e342fce.png)
+
+Veja que **não tem** viés claro nem pra cima nem pra baixo (**esse é o comportamento esperado quando não uma coisa não tem a ver com a outra!**)
+
+Lula **ainda ganhou** na urna velha, mas foi de 84 a 79. A chance de isso acontecer (vc ganhar pelo menos 84 lançamentos de cara ou coroa numa partida de 163 rodadas) é de uns 37%, que não é nada absurdamente improvável como os resultados 4 e 5 acima. Pelo contrário, é bem normal.
+
+Isso diminui drasticamente a confiança nas hipóteses a e b da conclusão anterior, e aumenta bastante a confiança na hipótese c!
+
+E agora com o banco novo a gente tem MAIS DADOS sócio-demográficos pra testar a hipótese c!
+
+### 7. O TSE distribuiu as urnas de maneira "discriminatória"?
+
+Spoiler: Sim, um pouquinho.
+
+A (nova) tabela do perfil do eleitorado tem dados de escolaridade, faixa etária, sexo e estado civil. Com isso dá pra ver se as populações que votaram na urna velha e na urna nova são realmente diferentes.
+
+![escolaridade_brasil](https://user-images.githubusercontent.com/218821/200926905-71f0d112-e545-468c-9a3c-539c4441e3a9.png)
+
+Acima: BRASIL - A urna nova tem uma galera mais escolarizada que a urna velha
+
+![faixaetaria_brasil](https://user-images.githubusercontent.com/218821/200927084-c5e7303b-c76d-4349-a5ec-f87ab6c1f1f8.png)
+
+Acima: BRASIL - Mesma distribuição de faixa etária
+
+![escolaridade_zona](https://user-images.githubusercontent.com/218821/200927199-3eb9518f-c6c0-456d-82d1-33627d1d55dc.png)
+
+Acima: 461 ZONAS mistas do item 5 - A urna nova tem um pouco mais de pessoas mais escolarizadas que a urna velha
+
+![faixaetaria_zona](https://user-images.githubusercontent.com/218821/200927426-e0350e5a-1c31-435a-bf71-f18e6a321358.png)
+
+Acima: 461 ZONAS mistas do item 5 - A urna nova tem um tiquinho de pessoas mais velhas que a urna velha
+
+E isso novamente fortalece um pouco mais a hipótese c.
+
+### Conclusão (de novo!)
+
+Batom na cueca do TSE? AGORA não mais! Xandão escapou fedendo!
+
+* Os novos dados de fato enfraquecem muito as hipóteses a) e b), e demostram que **c) é correto**: O TSE realmente conseguiu mandar mais urna nova pra coxinhas e mais urna velha pra mortadelas!
+* Os argentinos do brazilwasstolen erraram! Realmente os dados que eles mostraram deixam claro que tem algo estranho, mas depois de cavar BASTANTE a gente encontra uma explicação legítima pra isso.
+* Importante: ausência de evidência não é evidência de ausência. Este resultado **não prova que não houve fraude**, nem muito menos que as urnas eletrônicas são seguras!
+* Sem um processo eleitoral auditável de verdade, o "crime perfeito" (que não deixa rastro) é sim, possível, e não tem como afirmar que nunca houve fraude em larga escala nem nesta eleição nem noutra anterior!
+
+O que fazer com isso?
+
+* Quem confia mais no TSE, fique tranquilo, tá tudo bem!
+* Quem já desconfiava do TSE, pode voltar ao mesmo nível de desconfiança que você tinha antes de ler este relatório. Não há motivo pra desconfiar nem mais nem menos do que o que vc já desconfiava!
+* Os mais conspiracionistas podem dizer que: "na verdade todas as urnas estão roubando igualmente, por isso não é possível descobrir na base da estatística
+* Os ultra conspiracionistas (com kit completo, chapéu de alumínio e tudo mais) podem dizer que o TSE distribuiu as urnas assim só de sacanagem pra confundir os milicos que tão tentando achar algum furo! :-)
+
+### Algumas opiniões sobre isso tudo!
+
+Disclaimer: ficando um pouquinho político aqui.
+
+* Fazer análise de dados é muito divertido!
+* Amantes da treta, fiquem tranquilos. Enquanto não houver voto impresso no Brasil, a treta em volta das eleições estará garantida por gerações!
+* Esse tipo de investigação não deveria ser necessária! O sistema eleitoral deveria ser facilmente auditável pelo cidadão médio (sem precisar de conhecimento de informática, matemática, ou estatística)
+* A proposta do voto impresso resolveria o problema da auditabilidade e transparência do nosso processo eleitoral.
+* Desde ~2013 que eu costumo refletir sobre esse nosso sistema eleitoral e sempre achei que o voto puramente eletrônico é um absurdo numa democracia.  Penso isso basicamente pelo mesmo motivo que [a suprema corte alemâ rejeitou esse sistema em 2005](https://www.dw.com/pt-br/tribunal-alem%C3%A3o-considera-urnas-eletr%C3%B4nicas-inconstitucionais/a-4070568): o eleitor volta pra casa sem saber se a máquina registrou o voto corretamente. O brasileiro "se acostumou" com isso, mas eu nunca hehe.
+* Fico feliz de não ter encontrado nenhuma evidência de uma mega fraude escrota. Seria triste demais achar uma evidência dessa e ver a história de impunidade no país se repetir (e acho que provavelmente seria o caso)
+
 ## Análises feitas por outras pessoas:
 
 * [Fábio Emanuel](https://github.com/fabio-emanuel/Segundo_Turno_2022/blob/main/Golpista.ipynb)
