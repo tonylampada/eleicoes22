@@ -235,7 +235,7 @@ Disclaimer: ficando um pouquinho político aqui.
 * Amantes da treta, fiquem tranquilos. Enquanto não houver voto impresso no Brasil, a treta em volta das eleições estará garantida por gerações!
 * Esse tipo de investigação não deveria ser necessária! O sistema eleitoral deveria ser facilmente auditável pelo cidadão médio (sem precisar de conhecimento de informática, matemática, ou estatística)
 * A proposta do voto impresso resolveria o problema da auditabilidade e transparência do nosso processo eleitoral.
-* Desde ~2013 que eu costumo refletir sobre esse nosso sistema eleitoral e sempre achei que o voto puramente eletrônico é um absurdo numa democracia.  Penso isso basicamente pelo mesmo motivo que [a suprema corte alemâ rejeitou esse sistema em 2005](https://www.dw.com/pt-br/tribunal-alem%C3%A3o-considera-urnas-eletr%C3%B4nicas-inconstitucionais/a-4070568): o eleitor volta pra casa sem saber se a máquina registrou o voto corretamente. O brasileiro "se acostumou" com isso, mas eu nunca hehe.
+* Desde ~2013 que eu costumo refletir sobre esse nosso sistema eleitoral e sempre achei que o voto puramente eletrônico é um absurdo numa democracia.  Penso isso basicamente pelo mesmo motivo que [a suprema corte alemâ rejeitou esse sistema em 2005](https://www.dw.com/pt-br/tribunal-alem%C3%A3o-considera-urnas-eletr%C3%B4nicas-inconstitucionais/a-4070568): o eleitor volta pra casa sem saber se a máquina registrou o voto corretamente. O brasileiro "se acostumou" com isso, mas eu nunca :-).
 * Fico feliz de não ter encontrado nenhuma evidência de uma mega fraude escrota. Seria triste demais achar uma evidência dessa e ver a história de impunidade no país se repetir (e acho que provavelmente seria o caso)
 
 ## Análises feitas por outras pessoas:
