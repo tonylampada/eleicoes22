@@ -12,7 +12,7 @@ Vou tentar ver se consigo reproduzir as conclusões da turma do la derecha diari
 A primeira coisa é construir um banquinho com os dados.
 
 Se vc quiser só baixar o banco que eu já construí
- * [Banco completo (sqlite)](https://1drv.ms/u/s!Anp5dQ7ntRq8hSo2PxDJN1Wwr0D4?e=KRx07X))
+ * [Banco completo (sqlite)](https://1drv.ms/u/s!Anp5dQ7ntRq8hgYcotWgF2xcAShI?e=VpjfCL)
  * [Resumo da tabela urna em csv](https://github.com/tonylampada/eleicoes22/blob/main/segundoturno/urnas.csv.zip) - (pequenininho. cabe na memória de um panda fácil! ;-))
 
 Pra construir o banco:
