@@ -82,8 +82,6 @@ CREATE TABLE urna (
 	PRIMARY KEY (id)
 );
 
-CD_TIPO_SECAO_AGREGADA,DS_TIPO_SECAO_AGREGADA,NR_SECAO_PRINCIPAL,NM_LOCAL_VOTACAO,CD_TIPO_LOCAL,DS_TIPO_LOCAL,DS_ENDERECO,NM_BAIRRO,NR_CEP,NR_TELEFONE_LOCAL,NR_LATITUDE,NR_LONGITUDE,CD_SITU_LOCAL_VOTACAO,DS_SITU_LOCAL_VOTACAO,CD_SITU_ZONA,CD_SITU_SECAO,DS_SITU_SECAO,CD_SITU_LOCALIDADE,DS_SITU_LOCALIDADE,CD_SITU_SECAO_ACESSIBILIDADE,DS_SITU_SECAO_ACESSIBILIDADE
-
 with resumo as (
     select
         bu.SG_UF, 
@@ -129,8 +127,8 @@ with resumo as (
         coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'Branco'), 0) votos_branco,
         coalesce(sum(QT_VOTOS), 0) votos_totais
     from bu
-    join modelo_urna mu on mu.SG_UF = bu.SG_UF and mu.CD_MUNICIPIO = bu.CD_MUNICIPIO and mu.NR_ZONA = bu.NR_ZONA and mu.NR_SECAO = bu.NR_SECAO 
-    join localvotacao lv on lv.NR_TURNO = 2 and lv.SG_UF = bu.SG_UF and lv.CD_MUNICIPIO = bu.CD_MUNICIPIO and lv.NR_ZONA = bu.NR_ZONA and lv.NR_SECAO = bu.NR_SECAO 
+    left outer join modelo_urna mu on mu.SG_UF = bu.SG_UF and mu.CD_MUNICIPIO = bu.CD_MUNICIPIO and mu.NR_ZONA = bu.NR_ZONA and mu.NR_SECAO = bu.NR_SECAO 
+    left outer join localvotacao lv on lv.NR_TURNO = 2 and lv.SG_UF = bu.SG_UF and lv.CD_MUNICIPIO = bu.CD_MUNICIPIO and lv.NR_ZONA = bu.NR_ZONA and lv.NR_SECAO = bu.NR_SECAO 
     left outer join capital c on bu.SG_UF = c.SG_UF
     where bu.DS_CARGO_PERGUNTA = 'Presidente'
     group by 1,2,3,4,5,6,7,8,9,10,11
