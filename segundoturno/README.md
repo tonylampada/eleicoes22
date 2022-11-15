@@ -242,5 +242,8 @@ Disclaimer: ficando um pouquinho político aqui.
 
 * [Fábio Emanuel](https://github.com/fabio-emanuel/Segundo_Turno_2022/blob/main/Golpista.ipynb)
 * [Pedro Nauck](https://github.com/pedronauck/eleicoes2022/blob/main/README.md)
+* [Cristiano Herbert](https://github.com/tonylampada/eleicoes22/issues/3)
+* [André Ferreira](https://gitlab.com/sandbox279/tse_hell/-/blob/main/tse.ipynb)
+* [jemferraz](https://github.com/jemferraz/Brazilwasstolen_analysis)
 
 (se vc fez alguma análise, por gentileza abre uma issue e manda o link pra eu botar aqui)
