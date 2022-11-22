@@ -82,7 +82,12 @@ CREATE TABLE urna (
 	PRIMARY KEY (id)
 );
 
-with resumo as (
+with modelo_urna2 as (
+    select SG_UF, CD_MUNICIPIO, NR_ZONA, NR_SECAO, GROUP_CONCAT(modelo,',') modelo
+    from (select distinct SG_UF, CD_MUNICIPIO, NR_ZONA, NR_SECAO, modelo from modelo_urna)
+    group by 1,2,3,4
+),
+resumo as (
     select
         bu.SG_UF, 
         bu.CD_MUNICIPIO,
@@ -127,7 +132,7 @@ with resumo as (
         coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'Branco'), 0) votos_branco,
         coalesce(sum(QT_VOTOS), 0) votos_totais
     from bu
-    left outer join modelo_urna mu on mu.SG_UF = bu.SG_UF and mu.CD_MUNICIPIO = bu.CD_MUNICIPIO and mu.NR_ZONA = bu.NR_ZONA and mu.NR_SECAO = bu.NR_SECAO 
+    left outer join modelo_urna2 mu on mu.SG_UF = bu.SG_UF and mu.CD_MUNICIPIO = bu.CD_MUNICIPIO and mu.NR_ZONA = bu.NR_ZONA and mu.NR_SECAO = bu.NR_SECAO 
     left outer join localvotacao lv on lv.NR_TURNO = 2 and lv.SG_UF = bu.SG_UF and lv.CD_MUNICIPIO = bu.CD_MUNICIPIO and lv.NR_ZONA = bu.NR_ZONA and lv.NR_SECAO = bu.NR_SECAO 
     left outer join capital c on bu.SG_UF = c.SG_UF
     where bu.DS_CARGO_PERGUNTA = 'Presidente'

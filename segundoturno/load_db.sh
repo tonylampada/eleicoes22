@@ -53,7 +53,7 @@ vaibu TO
 vaibu DF
 vaibu ZZ
 
-python load_logs.py
+python load_logs_modelos.py
 
 yes | unzip 2t_eleitorado/local_votacao.zip -d 2t_eleitorado
 yes | unzip 2t_eleitorado/perfil.zip -d 2t_eleitorado
@@ -91,3 +91,6 @@ vaieleitorado SE
 vaieleitorado TO
 vaieleitorado DF
 vaieleitorado ZZ
+
+python load_logs_votos.py
+echo AC AL AP AM BA CE ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO DF ZZ | xargs -n 1 -P 12 python load_logs_votos.py
