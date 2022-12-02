@@ -94,3 +94,8 @@ vaieleitorado ZZ
 
 python load_logs_votos.py
 echo AC AL AP AM BA CE ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO DF ZZ | xargs -n 1 -P 12 python load_logs_votos.py
+
+# 2018 T2
+cat ufs.txt | xargs -n 1 loadar/load_buzip_18_2t.sh
+yes | unzip data/a18/2t_eleitorado/local_votacao.zip -d data/a18/2t_eleitorado/
+python load_locais_a18.py

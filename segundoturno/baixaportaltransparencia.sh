@@ -1,5 +1,13 @@
-mkdir 1t_bucsv 2t_bucsv 1t_logs 2t_logs
-mkdir 2t_eleitorado
+mkdir -p data/a18/1t_bucsv
+mkdir -p data/a18/1t_logs 
+mkdir -p data/a18/2t_bucsv
+mkdir -p data/a18/2t_logs
+mkdir -p data/a18/2t_eleitorado
+mkdir -p data/a22/1t_bucsv
+mkdir -p data/a22/1t_logs 
+mkdir -p data/a22/2t_bucsv
+mkdir -p data/a22/2t_logs
+mkdir -p data/a22/2t_eleitorado
 
 function get_zip {
 	uf=$1
@@ -21,6 +29,13 @@ function sobralogs {
 function get_perfil {
 	uf=$1
 	wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitor_secao/perfil_eleitor_secao_2022_${uf}.zip -O 2t_eleitorado/perfil_${uf}.zip
+}
+
+alias uwget='wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"'
+
+function get_bu_zip_18_2t {
+	uf=$1
+	uwget https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2018/buweb/BWEB_2t_${uf}_301020181744.zip -O data/a18/2t_bucsv/${uf}.zip
 }
 
 get_zip AC
@@ -84,7 +99,6 @@ sobralogs ZZ
 wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2022.zip -O 2t_eleitorado/local_votacao.zip
 wget --user-agent="Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0" https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitorado/perfil_eleitorado_2022.zip -O 2t_eleitorado/perfil.zip
 
-
 get_perfil AC
 get_perfil AL
 get_perfil AP
@@ -113,3 +127,8 @@ get_perfil SE
 get_perfil TO
 get_perfil DF
 get_perfil ZZ
+
+# 2018 2T
+cat ufs.txt | xargs -n 1 baixar/get_buzip_18_2t.sh
+uwget https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitorado/perfil_eleitorado_2018.zip -O data/a18/2t_eleitorado/perfil.zip
+uwget https://cdn.tse.jus.br/estatistica/sead/odsele/eleitorado_locais_votacao/eleitorado_local_votacao_2018.zip -O data/a18/2t_eleitorado/local_votacao.zip

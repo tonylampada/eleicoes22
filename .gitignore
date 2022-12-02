@@ -1,11 +1,11 @@
 /.idea
+/.vscode
 /hashes
 /result
 /buzips
 bu.db*
+/segundoturno/data
 /segundoturno/eleicao22_2t.db*
-/segundoturno/2t_logs
-/segundoturno/2t_bucsv
-/.vscode
-/segundoturno/2t_eleitorado
 /segundoturno/eleicao22_2t.zip
+/segundoturno/urnas.csv
+/my-metabase-db
