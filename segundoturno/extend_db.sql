@@ -153,3 +153,135 @@ update urna set idzona = SG_UF || '_' || CD_MUNICIPIO || '_' || NR_ZONA, idsecao
 update perfil_eleitorado_secao set idzona = SG_UF || '_' || CD_MUNICIPIO || '_' || NR_ZONA, idsecao = SG_UF || '_' || CD_MUNICIPIO || '_' || NR_ZONA || '_' || NR_SECAO;
 
 UPDATE perfil_eleitorado_secao as p SET modelo = u.modelo FROM urna u WHERE p.idsecao = u.idsecao;
+
+
+-- 2018 T2
+alter table localvotacao add column idlocal text;
+alter table localvotacao_a18t2 add column idlocal text;
+update localvotacao set idlocal = SG_UF || '_' || CD_MUNICIPIO || '_' || NR_ZONA || '_' || NR_LOCAL_VOTACAO;
+update localvotacao_a18t2 set idlocal = SG_UF || '_' || CD_MUNICIPIO  || '_' || NR_ZONA  || '_' || NR_LOCAL_VOTACAO;
+
+CREATE TABLE locais_1822 (
+	id INTEGER NOT NULL, 
+    "idlocal" TEXT, 
+    "SG_UF" TEXT, 
+    "CD_MUNICIPIO" BIGINT,
+    "NR_ZONA" BIGINT,
+    "NR_LOCAL_VOTACAO" BIGINT,
+    "NM_LOCAL_VOTACAO_18" TEXT, 
+    "NM_LOCAL_VOTACAO_22" TEXT, 
+    "CD_TIPO_LOCAL_18" BIGINT, 
+    "CD_TIPO_LOCAL_22" BIGINT, 
+    "DS_TIPO_LOCAL_18" TEXT, 
+    "DS_TIPO_LOCAL_22" TEXT, 
+    "DS_ENDERECO_18" TEXT, 
+    "DS_ENDERECO_22" TEXT, 
+    "NM_BAIRRO_18" TEXT, 
+    "NM_BAIRRO_22" TEXT, 
+    "NR_CEP_18" TEXT, 
+    "NR_CEP_22" TEXT, 
+    "NR_LATITUDE_18" TEXT, 
+    "NR_LATITUDE_22" TEXT, 
+    "NR_LONGITUDE_18" FLOAT, 
+    "NR_LONGITUDE_22" FLOAT,
+    "tipomodelo" TEXT,
+	PRIMARY KEY (id)
+);
+
+with l18 as (select distinct idlocal, SG_UF, CD_MUNICIPIO, NR_ZONA, NR_LOCAL_VOTACAO, NM_LOCAL_VOTACAO, CD_TIPO_LOCAL, DS_TIPO_LOCAL, DS_ENDERECO, NM_BAIRRO, NR_CEP, NR_LATITUDE, NR_LONGITUDE from localvotacao_a18t2 where nr_turno = 2),
+l22 as (select distinct idlocal, NM_LOCAL_VOTACAO, CD_TIPO_LOCAL, DS_TIPO_LOCAL, DS_ENDERECO, NM_BAIRRO, NR_CEP, NR_LATITUDE, NR_LONGITUDE from localvotacao where nr_turno = 2),
+c18 as (select idlocal, count(*) cnt from l18 group by 1 having cnt = 1),
+c22 as (select idlocal, count(*) cnt from l22 group by 1 having cnt = 1),
+locais_coincidentes as (
+    select 
+        l18.idlocal, l18.SG_UF, l18.CD_MUNICIPIO, l18.NR_ZONA, l18.NR_LOCAL_VOTACAO,
+        l18.NM_LOCAL_VOTACAO NM_LOCAL_VOTACAO_18, l22.NM_LOCAL_VOTACAO NM_LOCAL_VOTACAO_22, 
+        l18.CD_TIPO_LOCAL CD_TIPO_LOCAL_18, l22.CD_TIPO_LOCAL CD_TIPO_LOCAL_22, 
+        l18.DS_TIPO_LOCAL DS_TIPO_LOCAL_18, l22.DS_TIPO_LOCAL DS_TIPO_LOCAL_22, 
+        l18.DS_ENDERECO DS_ENDERECO_18, l22.DS_ENDERECO DS_ENDERECO_22, 
+        l18.NM_BAIRRO NM_BAIRRO_18, l22.NM_BAIRRO NM_BAIRRO_22, 
+        l18.NR_CEP NR_CEP_18, l22.NR_CEP NR_CEP_22, 
+        l18.NR_LATITUDE NR_LATITUDE_18, l22.NR_LATITUDE NR_LATITUDE_22, 
+        l18.NR_LONGITUDE NR_LONGITUDE_18, l22.NR_LONGITUDE NR_LONGITUDE_22
+    from c18
+    join c22 on c18.idlocal = c22.idlocal
+    join l18 on c18.idlocal = l18.idlocal
+    join l22 on c18.idlocal = l22.idlocal
+    where abs(l18.NR_LATITUDE - l22.NR_LATITUDE) < 0.01 and abs(l18.NR_LONGITUDE - l22.NR_LONGITUDE) < 0.01
+),
+lm as (
+    select 
+        SG_UF || '_' || CD_MUNICIPIO  || '_' || NR_ZONA  || '_' || NR_LOCAL_VOTACAO as idlocal,
+        count(*) filter (where modelo = 'UE2020') as cnovas,
+        count(*) filter (where modelo != 'UE2020') as cvelhas
+    from urna
+    group by 1
+), 
+ltm as (
+    select 
+        idlocal,
+        case 
+            when cnovas > 0 and cvelhas = 0 then 'nova'
+            when cnovas = 0 and cvelhas > 0 then 'velha'
+            when cnovas > 0 and cvelhas > 0 then 'mista'
+            else 'wtf'
+        end as tipomodelo
+    from lm
+)
+INSERT INTO locais_1822 (idlocal, SG_UF, CD_MUNICIPIO, NR_ZONA, NR_LOCAL_VOTACAO, NM_LOCAL_VOTACAO_18, NM_LOCAL_VOTACAO_22, CD_TIPO_LOCAL_18, CD_TIPO_LOCAL_22, DS_TIPO_LOCAL_18, DS_TIPO_LOCAL_22, DS_ENDERECO_18, DS_ENDERECO_22, NM_BAIRRO_18, NM_BAIRRO_22, NR_CEP_18, NR_CEP_22, NR_LATITUDE_18, NR_LATITUDE_22, NR_LONGITUDE_18, NR_LONGITUDE_22, tipomodelo)
+select lc.*, ltm.tipomodelo
+from locais_coincidentes lc
+inner join ltm on lc.idlocal = ltm.idlocal;
+
+CREATE TABLE urna_a18t2 (
+	id INTEGER NOT NULL, 
+    "SG_UF" TEXT, 
+    "CD_MUNICIPIO" BIGINT,
+    "NM_MUNICIPIO" TEXT, 
+    "NR_ZONA" BIGINT,
+    "NR_SECAO" BIGINT,
+    "NR_LOCAL_VOTACAO" BIGINT,
+    "IS_CAPITAL" BOOLEAN,
+    "DT_CARGA_URNA_EFETIVADA" DATETIME,
+    "DT_ABERTURA" DATETIME,
+    "DT_ENCERRAMENTO" DATETIME,
+    "QT_APTOS" BIGINT,
+    "QT_COMPARECIMENTO" BIGINT,
+    "QT_ABSTENCOES" BIGINT,
+    "votos_poste" BIGINT,
+    "votos_bozo" BIGINT,
+    "votos_nulo" BIGINT,
+    "votos_branco" BIGINT,
+    "votos_totais" BIGINT,
+	PRIMARY KEY (id)
+);
+
+with resumo as (
+    select
+        bu.SG_UF, 
+        bu.CD_MUNICIPIO,
+        bu.NM_MUNICIPIO, 
+        bu.NR_ZONA,
+        bu.NR_SECAO,
+        bu.NR_LOCAL_VOTACAO,
+        bu.NM_MUNICIPIO = c.NM_MUNICIPIO as IS_CAPITAL,
+        bu.DT_CARGA_URNA_EFETIVADA,
+        bu.DT_ABERTURA,
+        bu.DT_ENCERRAMENTO,
+        max(QT_APTOS) QT_APTOS,
+        max(QT_COMPARECIMENTO) QT_COMPARECIMENTO,
+        max(QT_ABSTENCOES) QT_ABSTENCOES,
+        coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'FERNANDO HADDAD'), 0) votos_poste,
+        coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'JAIR BOLSONARO'), 0) votos_bozo,
+        coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'Nulo'), 0) votos_nulo,
+        coalesce(sum(QT_VOTOS) filter (where NM_VOTAVEL = 'Branco'), 0) votos_branco,
+        coalesce(sum(QT_VOTOS), 0) votos_totais
+    from bu_a18t2 bu
+    left outer join capital c on bu.SG_UF = c.SG_UF
+    where bu.DS_CARGO_PERGUNTA = 'Presidente'
+    group by 1,2,3,4,5,6
+) 
+INSERT INTO urna_a18t2 (SG_UF,CD_MUNICIPIO,NM_MUNICIPIO,NR_ZONA,NR_SECAO,NR_LOCAL_VOTACAO,IS_CAPITAL,DT_CARGA_URNA_EFETIVADA,DT_ABERTURA,DT_ENCERRAMENTO,QT_APTOS,QT_COMPARECIMENTO,QT_ABSTENCOES,votos_poste,votos_bozo,votos_nulo,votos_branco,votos_totais)
+SELECT SG_UF,CD_MUNICIPIO,NM_MUNICIPIO,NR_ZONA,NR_SECAO,NR_LOCAL_VOTACAO,IS_CAPITAL,DT_CARGA_URNA_EFETIVADA,DT_ABERTURA,DT_ENCERRAMENTO,QT_APTOS,QT_COMPARECIMENTO,QT_ABSTENCOES,votos_poste,votos_bozo,votos_nulo,votos_branco,votos_totais
+FROM resumo;
+

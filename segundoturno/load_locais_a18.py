@@ -5,6 +5,7 @@ import dataset
 CHUNKSIZE = 10000
 
 inttypes = [
+    'NR_TURNO',
     'CD_MUNICIPIO',
     'NR_ZONA',
     'NR_SECAO',
@@ -27,7 +28,6 @@ deletetypes = [
     'AA_ELEICAO',
     'DT_ELEICAO',
     'DS_ELEICAO',
-    'NR_TURNO',
 ]
 
 floattypes = [
