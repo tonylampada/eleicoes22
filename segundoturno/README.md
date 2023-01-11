@@ -245,5 +245,6 @@ Disclaimer: ficando um pouquinho político aqui.
 * [Cristiano Herbert](https://github.com/tonylampada/eleicoes22/issues/3)
 * [André Ferreira](https://gitlab.com/sandbox279/tse_hell/-/blob/main/tse.ipynb)
 * [jemferraz](https://github.com/jemferraz/Brazilwasstolen_analysis)
+* [ProsperWare](https://github.com/ProsperWare/eleicoes22/tree/falha_par_impar/segundoturno/par_impar_falha) - falha par/ímpar
 
 (se vc fez alguma análise, por gentileza abre uma issue e manda o link pra eu botar aqui)
